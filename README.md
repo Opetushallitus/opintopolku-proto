@@ -1,2 +1,2 @@
 # opintopolku-proto
-Uuden opintopolku.fi
+Uuden opintopolku.fi:n html-proto
