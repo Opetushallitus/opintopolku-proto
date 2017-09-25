@@ -8,16 +8,22 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 1.35em;
+}
 .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {background-color: transparent;}
 
 #wrapper {
   padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 #wrapper.toggled {
@@ -33,10 +39,10 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background: #282828;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 #sidebar-wrapper::-webkit-scrollbar {
@@ -90,7 +96,7 @@ display: none;
 }
 .sidebar-nav li a {
   display: block;
-  color: #ddd;
+  color: #b9b9b9;
   text-decoration: none;
   padding: 10px 15px 10px 30px;    
 }
@@ -107,7 +113,7 @@ display: none;
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
+  height: 50px;
   font-size: 20px;
   line-height: 44px;
 }
@@ -197,6 +203,7 @@ display: none;
 .menu.is-closed .hamb-top { 
   top: 4px; 
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .menu.is-closed .hamb-middle {
   top: 50%;
@@ -205,15 +212,18 @@ display: none;
 .menu.is-closed .hamb-bottom {
   bottom: 7px;  
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .menu.is-closed:hover .hamb-top {
   top: 0;
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .menu.is-closed:hover .hamb-bottom {
   bottom: 4px;
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .menu.is-open .hamb-top,
 .menu.is-open .hamb-middle,
@@ -227,12 +237,16 @@ display: none;
 }
 .menu.is-open .hamb-top { 
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+  transition: transform .2s cubic-bezier(.73,1,.28,.08);
 }
 .menu.is-open .hamb-middle { display: none; }
 .menu.is-open .hamb-bottom {
   -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+  transition: transform .2s cubic-bezier(.73,1,.28,.08);
 }
 .menu.is-open:before {
   content: '';
@@ -244,13 +258,18 @@ display: none;
   text-align: center;
   opacity: 0;
   -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .menu.is-open:hover:before {
   opacity: 1;
   display: block;
   -webkit-transform: translate3d(-100px,0,0);
+  transform: translate3d(-100px,0,0);
   -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .menu.is-open::after {
   content: "";
@@ -260,12 +279,27 @@ display: none;
   left: 50px;
   width: 25px;
 }
+ul.languages {
+  font-size: .8em;
+  display: inline;
+  padding: 0;
+}
+ul.languages li {
+  display: inline;
+  float: left;
+  width: auto;
+}
+ul.languages .selected a {
+  color: #9da4aa;
+}
+ul.languages .selected a{
+  color: #ffffff;
+}
 li.sidebar-brand {
   font-size: 18px!important;
   margin: 5px 30px;
   color: #ffffff;
 }
-
 .overlay {
   position: fixed;
   display: none;
@@ -466,7 +500,7 @@ nav.navbar-right li {
   position: relative;
 }
 .header-search.main {
-  padding: 7% ;
+  padding: 7% 0;
 }
 .header-search input {
   box-shadow: 0 0px 7px #6b6b6b;
@@ -621,7 +655,10 @@ footer {
   background: #f8f8f8;
   border-top: 1px solid #bcbcbc;
   padding: 2em 0;
-  margin-top: 2.5em; 
+  /*margin-top: 2.5em; */
+}
+footer.margin {
+  margin-top: 2.5em;
 }
 ul.site-links li {
   margin-bottom: 10px
@@ -666,36 +703,36 @@ footer p {
 .panel-group .panel-heading+.panel-collapse>.panel-body {
 	border-top: 0;
 }
-div#headingOne, 
-div#collapseOne .panel-body  {
+.panel-group.home #headingOne, 
+.panel-group.home #collapseOne .panel-body  {
   background-color: #00be9c;
   padding: 3%;
 }
-div#headingTwo, 
-div#collapseTwo .panel-body  {
+.panel-group.home #headingTwo, 
+.panel-group.home #collapseTwo .panel-body  {
   background-color: #53d78b;
   padding: 3%;
 }
-div#headingThree, 
-div#collapseThree .panel-body {
+.panel-group.home #headingThree, 
+.panel-group.home #collapseThree .panel-body {
   background-color: #2c97df;
   padding: 3%;
 }
 .panel-heading {
   border-radius: 0;
 }
-.panel-title a {
+.home .panel-title a {
 	color: #ffffff;
 }
 .panel-group .panel+.panel {
 	margin-top: 0;
 }
-.panel-title a.collapsed::before {
+.home .panel-title a.collapsed::before {
 	content: "\f107";
 	font-family: "FontAwesome";
 	color: #ffffff;
 }
-.panel-title a::before {
+.home .panel-title a::before {
 	content: "\f106";
 	font-family: "FontAwesome";
 	color: #ffffff;
@@ -738,9 +775,12 @@ div#collapseThree .panel-body {
   content: "- SULJE RAJAIMET";
   transition: all ease-in .5s;
 }
-.search-results {
-  margin-top: 30px;
+.highlight {
+  color: #f5aa01;
+  font-weight: 500;
+
 }
+
 .search-results .row {
     margin-top: 30px;
 }
@@ -757,6 +797,7 @@ div#collapseThree .panel-body {
   color: #4d93d9;
   font-weight: 500;
   margin-bottom: 30px;
+  font-size: 1.125em;
 }
 .suosikkit {
   position: relative;
@@ -769,7 +810,7 @@ div#collapseThree .panel-body {
   cursor: hand;
 }
 .suosikkit i {
-  transition: all ease-in .5s;
+  transition: all ease-in .25s;
 }
 .fa.fa-heart {
   color: #fe0809;
@@ -823,7 +864,7 @@ div#collapseThree .panel-body {
   padding: 5px 20px;
   float: right;
   text-align: center;
-  transition: all ease-in .5s;
+  transition: all ease-in .25s;
 }
 .compare-button span::after {
   content: "Ota vertailuun";
@@ -864,13 +905,220 @@ div#collapseThree .panel-body {
   width: 100%;
   z-index: 1;
 }
+.info-page .panel-title a {
+  width: 100%;
+  display: inline-block;
+}
+.info-page .panel-title a::after {
+  content: "\f106";
+  font-family: "FontAwesome";
+  color: #000000;
+}
+.info-page .panel-title a.collapsed::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: #000000;
+}
+.info-page .panel-heading {
+  border-bottom: 1px solid #979797;
+  background-color: transparent;
+  padding: 10px 0;
+}
+.info-page .panel-heading h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+.info-page .panel-heading a:hover,
+.info-page .panel-heading a:visited,
+.info-page .panel-heading a:focus {
+  text-decoration: none;
+}
+.info-page .panel-body {
+  color: #000000;
+}
+.right-column img {
+  width: 100%;
+  position: relative;
+  top:-20px;
+}
+.right-column {
+  background-color: #ecf3fd;
+  border-left: 1px solid #979797;
+  height: calc(100% + 150px);
+}
+.right-column ul {
+  padding: 3% 0;
+}
+.right-column li {
+  padding: 2%;
+}
+.right-column a {
+  color: #4d93d9;
+  font-weight: 500;
+
+}
+p.student-comment {
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 0 3;
+  font-weight: 400;
+}
+.oppilaitokset h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #979797;
+}
+.oppilaitos .right-column {
+  height: calc(100% + 200px);
+  background-color: transparent; 
+}
+.oppilaitos .right-column {
+  font-size: 1.2em;
+}
+.oppilaitos .right-column span {
+  color: #9c9c9c;
+}
+.modal {
+  color: #ffffff;
+}
+.modal-body {
+  padding: 0 30px 15px;
+}
+.info-page .panel-body p {
+  font-size: 1.2em;
+}
+.modal .close {
+  font-family: cursive;
+  color: #ffffff;
+  font-size: 1.75em;
+  font-weight: 100;
+  opacity: 1;
+  display: inline-block;
+  -webkit-transform: scale(1.3,1);
+  -moz-transform: scale(1.3,1);
+  -ms-transform: scale(1.3,1);
+  -o-transform: scale(1.3,1);
+  transform: scale(1.3,1.2);
+}
+.modal .close:hover {
+  color: #ffffff;
+  opacity: .7;
+}
+.modal i.fa.fa-heart-o {
+  font-size: 1.8em;
+  font-weight: 600;
+  float: right;
+  margin-right: 20px;
+  color: #ffffff;
+}
+.modal-header,
+.modal-body,
+.modal-content {
+  background: #2c97df;
+}
+.modal-header,
+.modal-footer {
+  border: none;
+}
+.modal-footer {
+  background: #003478;
+}
+.modal-footer i.fa.fa-university {
+  float: left;
+  text-align: center;
+}
+.modal-footer i.fa.fa-university::after {
+  content: "Oppilaitoksen esittely";
+  display: block;
+  font-size: 0.45em;
+  padding-top: .5em;
+
+}
+.modal-footer i.fa.fa-book {
+  text-align: center;
+}
+.modal-footer i.fa.fa-book::after {
+  content: "Lue lisää";
+  display: block;
+  font-size: 0.45em;
+  padding-top: .5em;
+
+}
+.modal-footer i {
+  font-size: 2em;
+}
+.modal .school-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.modal-header {
+  padding: 0 30px;
+} 
+.course-info {
+  padding-left: 0;
+  font-weight: 500;
+}
+.education-info {
+  text-align: right
+}
+.course-info div[class*="col-"] {
+  padding: .4% 1%;
+}
+.oppilaitos .right-column .social-media {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+.info-page .left-column h1 i {
+  color: #ec1c2c;
+  position: relative;
+  top: 10px;
+}  
+.info-page .left-column h1 i::before {
+  font-size: 2.65em;
+}
+.info-page .left-column h1 i::after {
+  font-family: "FontAwesome";
+  content: "\f19d";
+  color: #ffffff;
+  position: absolute;
+  left: 7px;
+  font-size: 1.44em;
+  top: 15px;
+}
+.info-page.oppilaitos .left-column h1 i {
+  color: #0a2f87;
+  position: relative;
+  top: 10px;
+} 
+.info-page.oppilaitos .left-column h1 i::after {
+  font-family: "FontAwesome";
+  content: "\f1ad";
+  color: #ffffff;
+  position: absolute;
+  left: 15px;
+  font-size: 1.44em;
+  top: 16px;
+} 
+.carousel-control i {
+  top: 50%;
+  position: relative;
+  font-size: 2em;
+}
+.carousel {
+  margin-top:30px;
+}
+.right-column iframe {
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+}
 @media (max-width: 1200px) {
   .globe i {
     font-size: 5.25em;
   }
   .text {
     width: 70%;
-    min-height: 100px;
+    max-height: 120px;
     height: auto;
   }
 }
@@ -908,8 +1156,30 @@ div#collapseThree .panel-body {
   }
 }
 @media (max-width: 768px) {
+  #collapseOne .date::after {
+    content: "kesä";
+  }
+  #collapseTwo .date::after {
+    content: "heinä";
+  }
+  #collapseThree .date::after {
+    content: "syys";
+  }
+  .panel .appointment {
+    width: 84%;
+    padding: 3%;
+  }
+  .panel .content {
+    height: 20px;
+  }
   .haut {
     width: 100%;
+  }
+  ul.right-links li a {
+    max-width: 100%;
+  }
+  .info-page .panel-heading h4 {
+    font-size: 1em;
   }
   .haut .date {
     font-size: 4.5em;
@@ -971,6 +1241,16 @@ div#collapseThree .panel-body {
   }
   .filter-button {
     top: 8px;
+  }
+  .right-column {
+    margin: 30px 0;
+    min-height: 120px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .panel-body .date {
+    font-size: 3.6em;
   }
 }
 @media (min-width: 768px) {
