@@ -137,7 +137,7 @@
 										</ul>
 										</li>
 										<li>
-											<a href="#">Services</a>
+											<a href="#">Anna palautetta</a>
 										</li>	  
 							</ul>
 						</nav>
@@ -183,7 +183,7 @@
 							 <div class="container">
 									<div class="row info-page">
 											<div class="col-xs-12 col-md-9 left-column" >
-													<h1><i class="fa fa-circle" aria-hidden="true"></i> Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä</h1>
+													<h1><i class="fa fa-circle" aria-hidden="true"></i> <span>Tieto- ja viestintätekniikan perustutkinto, 180 osaamispistettä</span> </h1>
 											<div class="row">		
 											<div class="col-xs-12">
 													<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -245,7 +245,7 @@
 											<div class="col-xs-12">
 													<div class="row"> 
 															<div class="col-xs-12 col-md-6 box-container">
-																<div class="col-xs-12 search-box">
+																<div class="col-xs-12 search-box haku">
 																	<div class="suosikkit">
 																			<i class="fa fa-heart-o" aria-hidden="true"></i>
 																	</div>
@@ -316,7 +316,7 @@
 														</div>
 													</div>
 													<div class="col-xs-12 col-md-6 box-container">
-															<div class="col-xs-12 search-box">
+															<div class="col-xs-12 search-box haku">
 																	<div class="suosikkit">
 																			<i class="fa fa-heart-o" aria-hidden="true"></i>
 																	</div>
@@ -419,7 +419,7 @@
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>X</span></button>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
 									<div class="suosikit">
 										<i class="fa fa-heart-o" aria-hidden="true"></i>
 									</div>
@@ -447,7 +447,7 @@
 									<div class="row">
 										<div class="col-xs-6">
 											<a href="oppilaitos.html"><i class="fa fa-university" aria-hidden="true"></i></div></a>
-										<div class="col-xs-6"><a href=""><i class="fa fa-book" aria-hidden="true"></i></a></div>
+										<div class="col-xs-6"><a href="toteutus.html"><i class="fa fa-book" aria-hidden="true"></i></a></div>
 									</div>
 								</div>
 							</div>
@@ -501,7 +501,7 @@
 						var data = jQuery(this).attr("koulutus-data").replace(/\s/g,'').split("|");
 						jQuery(".modal .course-info").text("");
 						data.forEach(function(element) {
-							jQuery(".modal .course-info").append("<div class=\"col-md-2 col-xs-4 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-10 col-xs-8\">" + element.split(":")[1] + "</div>");
+							jQuery(".modal .course-info").append("<div class=\"col-md-3 col-xs-7 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-9 col-xs-5\">" + element.split(":")[1] + "</div>");
 						});
 						 var schoolName = jQuery(this).attr("nimi-data");
 						 jQuery(".modal .school-link").text(schoolName);
