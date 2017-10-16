@@ -886,8 +886,8 @@ footer p {
   display: inline-block;
   transform: rotate(-40deg);
   -webkit-box-shadow: 3px 0px 10px 0px rgba(50, 50, 50, 0.69);
-  -moz-box-shadow:    3px 0px 10px 0px rgba(50, 50, 50, 0.69);
-  box-shadow:         3px 0px 10px 0px rgba(50, 50, 50, 0.69);
+  -moz-box-shadow: 3px 0px 10px 0px rgba(50, 50, 50, 0.69);
+  box-shadow: 3px 0px 10px 0px rgba(50, 50, 50, 0.69);
 }
 .compare-button span {
   border: 1px solid #4d93d9;
@@ -918,10 +918,10 @@ footer p {
     left: 0;
 }
 .filter-options {
-  z-index: 1000;
+  z-index: 998;
   left: -3000px;
   width: 100%;
-  margin-top: -60px;
+  margin-top: -30px;
   overflow-y: auto;
   overflow-x: hidden;
   background: #ffffff;
@@ -1234,6 +1234,79 @@ p.btn-education .btn-default{
 strong {
   font-weight: 500;
 }
+#compare-row {
+  min-height: 200px;
+  height: auto;
+  background: #e7f2f6;
+}
+#compare-row .pull-right a {
+  display: table;
+  margin-top: 20px;
+}
+#compare-row .pull-right a:nth-child(1) {
+  margin: 85px 0 20px;
+  padding: 20px;
+  border: none;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #5B9AE2),
+    color-stop(1, #4584CC)
+  );
+  background-image: -o-linear-gradient(bottom, #5B9AE2 0%, #4584CC 100%);
+  background-image: -moz-linear-gradient(bottom, #5B9AE2 0%, #4584CC 100%);
+  background-image: -webkit-linear-gradient(bottom, #5B9AE2 0%, #4584CC 100%);
+  background-image: -ms-linear-gradient(bottom, #5B9AE2 0%, #4584CC 100%);
+  background-image: linear-gradient(to bottom, #5B9AE2 0%, #4584CC 100%);
+}
+.compare-box {
+  border: 1px solid #0ea4d7;
+  background: #ffffff;
+  min-height: 200px;
+  height: auto;
+  position: relative;
+  left: 30px;
+  top: 55px;
+  width: 20%;
+  margin-left: 30px;
+}
+.compare-box button.close {
+  width: 100%;
+  text-align: right;
+  margin: 5px;
+}
+.compare-box a {
+  display: block;
+}
+.compare-box .title {
+  height: 55px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 15px;
+}
+.compare-box .button {
+  width: 110px;
+  margin: 5% auto;
+  padding: 10px 25px;
+  border: 2px solid #b2cce7;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 13px;
+}
+button.toggle-compare {
+  position: relative;
+  right: 50px;
+  top: 20px;
+}
+button.toggle-compare::before {
+  font-family: "FontAwesome";
+  content: "\f068";
+}
+button.toggle-compare::after {
+  content: "Pienennä";
+  display: block;
+} 
 @media (max-width: 1200px) {
   .globe i {
     font-size: 5.25em;
@@ -1425,6 +1498,17 @@ h1 {
 }
 .info-page .panel-body p {
   font-size: 1em;
+}
+.oppilaitos .right-column {
+  height: auto;
+}
+.compare-box {
+  width: 100%;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 30px;
+  min-height: 65px;
+  left: 0;
 }
 }
 @media (max-width: 425px) {
