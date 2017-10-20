@@ -161,7 +161,7 @@
 								 <div class="container">
 										 <div class="row">
 												 <div class="col-xs-12 col-md-8 header-search">
-														 <input id="regular-input" class="oph-input" type="text" value="Etsi ja vertaile koulutuksia tai opplaitoksia" placeholder="Placeholder">
+														 <input id="regular-input" class="oph-input" type="text" placeholder="Etsi ja vertaile koulutuksia tai opplaitoksia">
 														 <a href="search.html" class="search-button"></a>
 												 </div>
 											 </div>
@@ -177,9 +177,166 @@
 								 </div>
 									 
 							 </div>
-						 
-							 </div>
-
+							</div>
+							<div class="row filters-layer">
+								<div class="filter-container">
+									<div class="filter-options">
+										<div class="col-xs-12 filters-main">
+										<div class="form-group">
+											<ul class="filter-menu">
+												<li><a href="#">Kaikki kategoriat</a></li>
+												<li class="selected"><a href="#">Koulutukset</a></li>
+											</ul>
+										</div>
+										<div class="form-group">
+											<h5>Pohjakoulutus</h5>	
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Peruskoulu
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Lukio
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Ammatillinen koulutus
+												</label>
+											</div>
+											<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Korkeakoulutus
+													</label>
+											</div>
+										</div>
+										<div class="form-group tyyppi">
+											<h5>Koulutustyyppi</h5>	
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Lukio
+													</label>
+													<span class="cr ch-1"></span>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Ammatillinen koulutus
+													</label>
+													<span class="cr ch-2"></span>
+												</div>
+												<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															Korkeakoulutus
+														</label>
+														<span class="cr ch-3"></span>
+												</div>
+											<div class="checkbox ck-4">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Avoin korkeakoulu
+													</label>
+													<span class="cr ch-4"></span>
+												</div>	
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															Työväenopiston kurssi
+														</label>
+														<span class="cr ch-5"></span>
+													</div>
+												</div>
+												<div class="form-group">
+														<h5>Opetusmuoto</h5>	
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox" value="">
+																	<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	Lähiopetus
+																</label>
+															</div>
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox" value="">
+																	<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	Itsenäinen opiskelu
+																</label>
+															</div>
+															<div class="checkbox">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																		Ohjattu opiskelu
+																	</label>
+															</div>
+												</div>
+											<hr>
+											<div class="form-group">
+												<h5>Paikkakunta</h5>
+												<input id="regular-input" class="oph-input" type="text" placeholder="Syötä paikkakunnan nimi">
+											</div>
+											<hr>
+											<div class="form-group">
+												<h5>Opetusaika</h5>	
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Päiväopetus
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Iltaopetus
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Viikonloppuopetus
+													</label>
+												</div>
+											</div>
+											<hr>
+											<div class="form-group action-buttons">
+												<a href="search.html" role="button" class="btn btn-primary">HAE</a>
+												<a class="clear-compare" href="#">Poista rajaukset</a>
+											</div>		
+										</div>
+									</div>
+								</div>	
+						</div>
+							 <div class="container-fluid hidden" id="compare-row">
+									<button type="button" class="close toggle-compare" aria-label="Close" ></button>
+								<div class="container">
+									<div class="row">
+										<div id="compared-subjects"></div>
+											<div class="col-xs-12 col-md-3 pull-right">
+												<a href="#" role="button" class="btn btn-primary">Vertaile</a>
+												<a class="clear-compare" href="#">Poista kaikki</a>
+											</div>
+									</div>
+								</div>
+							</div>
 							 <div class="container">
 									<div class="row info-page">
 											<div class="col-xs-12 col-md-9 left-column" >
@@ -485,15 +642,65 @@
 					 isClosed = true;
 				 }
 			 }
+			 function checkCompareLayer (blockContent,blockId) {
+				var compareFieldsSelected = $(".haku .poista").length > 0 ? true : false;
+				var numberOfFieldsSelected = $(".haku .poista").length;
+				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
+				var boxAlreadyExist = $("#box-"+blockId+"").length > 0 ? true : false;
+				if (compareFieldsSelected) {
+					if (numberOfFieldsSelected <= 3) {
+						if (!isCompareLayerOpen) {
+							$("#compare-row").removeClass("hidden");
+							if (!boxAlreadyExist) {
+								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-'+ blockId +'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >'+ blockContent +'</a> <a href="koulutus.html" class="button">Tutustu</a> </div>');		
+							} else {
+								$("#box-"+blockId+"").remove();
+							}
+						}
+					}
+					
+				} else {
+					$("#compare-row").addClass("hidden");
+					$("#compared-subjects").html("");
+				}
+			}
+			$(".search-results").on("click", ".compare-button span", function(e) {
+					var buttonIndex = $(this).closest(".haku").index(".haku");
+					var numberOfFieldsSelected = $(".haku .poista").length;
+					var linkText = $(this).offsetParent(0)[0].children[2].children[0].innerText;
+					if (!$(e.target).is(".poista")) {
+						if (numberOfFieldsSelected <=2) {
+							$(this).addClass("poista");
+							checkCompareLayer (linkText,buttonIndex);
+						}
+					} else {
+						$(this).removeClass("poista");
+						$(".box-"+ buttonIndex + "").remove();						
+						checkCompareLayer (linkText,buttonIndex);
+					}
+					
+			});
+			$(".clear-compare").on("click", function() {
+				$(".compare-button span").removeClass("poista");
+				checkCompareLayer("","");
+			});
+			$("#compare-row").on("click", ".compare-box .close", function() {
+				var boxId = parseInt($(this).parents(".compare-box").attr("id").split("-")[1]);
+				var compareBox = $(".compare-box").length;
+				$(".haku:eq("+boxId+") .compare-button span").removeClass("poista");
+				$("#box-"+boxId+"").css("display", "none");
+				$("#box-"+boxId+".compare-box").remove();
+				if (compareBox === 1){
+					$("#compare-row").addClass("hidden");
+					$("#compared-subjects").html("");
+				}
+			});	
 				 jQuery('[data-toggle="offcanvas"]').click(function () {
 						 jQuery("#wrapper").toggleClass("toggled");
 				 });
 				 		jQuery(".suosikkit i").on("click", function(){
 						 jQuery(this).toggleClass( "fa-heart-o fa-heart");
 						});
-					 jQuery(".compare-button span").on("click", function(){
-						 jQuery(this).toggleClass( "poista");
-					 });
 					 jQuery(".filter-button").on("click", function(){
 						 jQuery(this).toggleClass( "sulje");
 					 });
@@ -507,6 +714,19 @@
 						 jQuery(".modal .school-link").text(schoolName);
 						 jQuery("#koulutusModal").modal("show");
 					 });
+					 if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
+			}
+			$(".filter-button").on("click", function(){
+				$(this).toggleClass("sulje");
+				$(".filter-container").toggleClass("open");
+				if($(window).innerWidth() <= 768) {
+					$("body").toggleClass("no-scroll");
+				}
+			});
+			$(window).on("resize", function() {
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action").outerHeight()));
+			});
 					
 				});
 	 </script>

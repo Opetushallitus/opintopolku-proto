@@ -1,0 +1,664 @@
+<html lang="en">
+	<head>
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	   <title>Opintopolku - Hakutulokset</title>
+	   <link href="css/bootstrap.min.css" rel="stylesheet">
+	   <link href="css/oph-styles-min.css" rel="stylesheet">
+	   <link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		   <div id="wrapper">
+				   <div class="container-fluid navigation-bar">
+						   
+			   </div>
+				   <div class="overlay"></div>
+				   <!-- Sidebar -->
+				   <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+						   <ul class="nav sidebar-nav">
+							   <li class="sidebar-brand">
+								   Valikko
+							   </li>
+							   <li>
+								   <ul class="languages">
+									   <li class="selected"><a href="#">SUOMEKSI</a></li>
+									   <li><a href="#">PÅ SVENSKA</a></li>
+									   <li><a href="#">IN ENGLISH</a></li>
+								   </ul>
+							   </li>
+							   <li class="selected">
+								   <a href="index.html">Etusivu</a>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lukio <span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+										   <li><a href="#">Opinnot lukiossa</a></li>
+										   <li><a href="#">Näin haet yhteishaussa</a></li>
+										   <li><a href="#">Opiskelijoiden valinta lukioihin</a></li>
+										   <li><a href="#">Ylioppilastutkinto</a></li>
+										   <li><a href="#">Erityislukiot</a></li>
+										   <li><a href="#">Kansainvälinen lukiokoulutus</a></li>
+										   <li><a href="#">Etälukiot</a></li>
+										   <li><a href="#">Vaihto-opiskelijaksi</a></li>
+									   </ul>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ammatillinen koulutus<span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+											   <li><a href="#">Mitä ammatillisessa voi opiskella</a></li>
+											   <li><a href="#">Ammatillinen perustutkinto</a></li>
+											   <li><a href="#">VALMA-koulutus</a></li>
+											   <li><a href="#">Ammatillinen erityisopetus</a></li>
+											   <li><a href="#">Oppisopimuskoulutus</a></li>
+											   <li><a href="#">Kaksoistutkinto</a></li>
+											   <li><a href="#">Näin haet yhteishaussa</a></li>
+											   <li><a href="#">Valintaperusteet ammatilliseen</a></li>
+											   <li><a href="#">Hakijan terveyden tila</a></li>
+									   </ul>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ammattikorkeakoulu<span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+											   <li><a href="#">Ammattikorkeakouluopintojen rakenne</a></li>
+											   <li><a href="#">Mitä AMK:ssa voi opiskella</a></li>
+											   <li><a href="#">Kuka voi hakea</a></li>
+											   <li><a href="#">Miten opiskelijat valitaan</a></li>
+											   <li><a href="#">AMK-tutkinto töiden oheella</a></li>
+											   <li><a href="#">Ylempi AMK-tutkinto</a></li>
+											   <li><a href="#">Siirtohaut</a></li>
+											   <li><a href="#">Ammattikorkeakoulujen erillishaut</a></li>
+											   <li><a href="#">Ammattikorkeakoulujen hakijapalvelut</a></li>
+											   <li><a href="#">Ammatilliset opettajakorkeakoulut</a></li>
+											   <li><a href="#">Avoin ammattikorkeakoulu</a></li>
+											   <li><a href="#">Erikoistumiskoulutus ammattikorkeakoulussa</a></li>
+											   <li><a href="#">Täydennyskoulutus</a></li>
+									   </ul>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Yliopisto<span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+											   <li><a href="#">Yliopistotutkintojen rakenne</a></li>
+											   <li><a href="#">Mitä yliopistossa voi opiskella</a></li>
+											   <li><a href="#">Kuka voi hakea</a></li>
+											   <li><a href="#">Miten opiskelijat valitaan</a></li>
+											   <li><a href="#">Yliopistojen erillishaut</a></li>
+											   <li><a href="#">Siirtohaku yliopistossa</a></li>
+											   <li><a href="#">Yliopistojen maisterikoulutukset</a></li>
+											   <li><a href="#">Erillisarvosanan suorittaminen</a></li>
+											   <li><a href="#">Jatkotutkinnot ja koulutukset</a></li>
+											   <li><a href="#">Yliopistojen hakijapalvelut</a></li>
+											   <li><a href="#">Avoin yliopisto</a></li>
+											   <li><a href="#">Erikoistumiskoulutus yliopistossa</a></li>
+											   <li><a href="#">Täydennyskoulutus</a></li>
+									   </ul>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Oppisopimus<span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+											   <li><a href="#">Opiskelijalle</a></li>
+											   <li><a href="#">Työnantajalle</a></li>
+											   <li><a href="#">Yrittäjälle</a></li>
+									   </ul>
+							   </li>
+							   <li class="dropdown">
+								   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aikuiskoulutus<span class="caret"></span></a>
+								   <ul class="dropdown-menu" role="menu">
+									   <li><a href="#">Mietitkö aikuiskoulutusta</a></li>
+									   <li><a href="#">Peruskoulu aikuisille</a></li>
+									   <li><a href="#">Aikuislukio</a></li>
+									   <li><a href="#">Aikuisten ammatillinen koulutus</a></li>
+									   <li><a href="#">Korkeakouluopinnot aikuisille</a></li>
+									   <li><a href="#">Opettajan koulutus</a></li>
+									   <li><a href="#">Kansanopistot</a></li>
+									   <li><a href="#">Kansalais- ja työväenopistot</a></li>
+									   <li><a href="#">Kesäyliopistot</a></li>
+									   <li><a href="#">Opintokeskukset ja opintokerhot</a></li>
+									   <li><a href="#">Kielitutkinnot ja kielikokeet</a></li>
+									   <li><a href="#">Työvoimakoulutus</a></li>
+								   </ul>
+							   </li>
+							   <li class="dropdown">
+									   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Koulutuksen valinta<span class="caret"></span></a>
+									   <ul class="dropdown-menu" role="menu">
+											   <li><a href="#">Mitä peruskoulun jälkeen</a></li>
+											   <li><a href="#">Muita vaihtoehtoja peruskoulun jälkeen</a></li>
+											   <li><a href="#">Ammatinvalinta</a></li>
+											   <li><a href="#">Yhteishaku</a></li>
+											   <li><a href="#">Jos sinulla on jo tutkinto</a></li>
+											   <li><a href="#">Ohjaus- ja neuvontapalvelut</a></li>
+											   <li><a href="#">Opintojen rahoitus</a></li>
+											   <li><a href="#">Opiskelijamaksut</a></li>
+											   <li><a href="#">Ulkomailla opiskelu</a></li>
+											   <li><a href="#">Maahanmuuttajien koulutus</a></li>
+											   <li><a href="#">Esteettömyys ja oppimisen tuki</a></li>
+											   <li><a href="#">Yrittäjäksi</a></li>
+									   </ul>
+									   </li>
+									   <li>
+										   <a href="#">Anna Palautetta</a>
+									   </li>	  
+						   </ul>
+					   </nav>
+				   <!-- /#sidebar-wrapper -->
+				   <!-- Page Content -->
+				   <div id="page-content-wrapper">
+				   <div class="container navigation">
+					   <div class="row">
+							   <button type="button" class="menu is-closed" data-toggle="offcanvas">
+									   <span class="hamb-top"></span>
+									   <span class="hamb-middle"></span>
+									   <span class="hamb-bottom"></span>
+								   </button>
+								   <a class="navbar-brand" href="index.html">Opintopolku</a>
+								   <div class="wrapper"><input type="text" class="nabvar-search oph-input" placeholder="Etsi..."></div>
+					   </div>
+				   </div>
+				   <div class="container-fluid" id="call-to-action">
+						   <div class="jumbotron">
+							   <div class="container">
+									   <div class="row">
+											   <div class="col-xs-12 col-md-8 header-search">
+													 <input id="regular-input" class="oph-input" type="text" placeholder="Etsi ja vertaile koulutuksia tai opplaitoksia">
+													 <a href="#" class="search-button"></a>
+											   </div>
+										   </div>
+							   </div>
+							   <div class="container">
+								   <div class="row">
+									   <div class="col-xs-12">
+										   <div class="filter-button" role="button">
+		   
+										   </div>
+									   </div>
+								   </div>
+							   </div>
+						   </div>
+						 </div>
+						   <div class="row filters-layer">
+								   <div class="filter-container">
+									   <div class="filter-options">
+										   <div class="col-xs-12 filters-main">
+										   <div class="form-group">
+											   <ul class="filter-menu">
+												   <li><a href="#">Kaikki kategoriat</a></li>
+												   <li class="selected"><a href="#">Koulutukset</a></li>
+											   </ul>
+										   </div>
+										   <div class="form-group">
+											   <h5>Pohjakoulutus</h5>	
+											   <div class="checkbox">
+												   <label>
+													   <input type="checkbox" value="">
+													   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													   Peruskoulu
+												   </label>
+											   </div>
+											   <div class="checkbox">
+												   <label>
+													   <input type="checkbox" value="">
+													   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													   Lukio
+												   </label>
+											   </div>
+											   <div class="checkbox">
+												   <label>
+													   <input type="checkbox" value="">
+													   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													   Ammatillinen koulutus
+												   </label>
+											   </div>
+											   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Korkeakoulutus
+													   </label>
+											   </div>
+										   </div>
+										   <div class="form-group tyyppi">
+											   <h5>Koulutustyyppi</h5>	
+												   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Lukio
+													   </label>
+													   <span class="cr ch-1"></span>
+												   </div>
+												   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Ammatillinen koulutus
+													   </label>
+													   <span class="cr ch-2"></span>
+												   </div>
+												   <div class="checkbox">
+														   <label>
+															   <input type="checkbox" value="">
+															   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															   Korkeakoulutus
+														   </label>
+														   <span class="cr ch-3"></span>
+												   </div>
+											   <div class="checkbox ck-4">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Avoin korkeakoulu
+													   </label>
+													   <span class="cr ch-4"></span>
+												   </div>	
+													   <div class="checkbox">
+														   <label>
+															   <input type="checkbox" value="">
+															   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															   Työväenopiston kurssi
+														   </label>
+														   <span class="cr ch-5"></span>
+													   </div>
+												   </div>
+												   <div class="form-group">
+														   <h5>Opetusmuoto</h5>	
+															   <div class="checkbox">
+																   <label>
+																	   <input type="checkbox" value="">
+																	   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	   Lähiopetus
+																   </label>
+															   </div>
+															   <div class="checkbox">
+																   <label>
+																	   <input type="checkbox" value="">
+																	   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	   Itsenäinen opiskelu
+																   </label>
+															   </div>
+															   <div class="checkbox">
+																	   <label>
+																		   <input type="checkbox" value="">
+																		   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																		   Ohjattu opiskelu
+																	   </label>
+															   </div>
+												   </div>
+											   <hr>
+											   <div class="form-group">
+												   <h5>Paikkakunta</h5>
+												   <input id="regular-input" class="oph-input" type="text" placeholder="Syötä paikkakunnan nimi">
+											   </div>
+											   <hr>
+											   <div class="form-group">
+												   <h5>Opetusaika</h5>	
+												   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Päiväopetus
+													   </label>
+												   </div>
+												   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Iltaopetus
+													   </label>
+												   </div>
+												   <div class="checkbox">
+													   <label>
+														   <input type="checkbox" value="">
+														   <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														   Viikonloppuopetus
+													   </label>
+												   </div>
+											   </div>
+											   <hr>
+											   <div class="form-group action-buttons">
+												   <a href="search.html" role="button" class="btn btn-primary">HAE</a>
+												   <a class="clear-compare" href="#">Poista rajaukset</a>
+											   </div>		
+										   </div>
+									   </div>
+								   </div>	
+						   </div>
+						   <div class="container-fluid visible-xs compare-mobile">
+							<div class="container">
+								<div class="row">
+									<div id="compared-subjects">
+										 <div class="col-xs-12 col-md-3 compare-box"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >Tieto ja viestintätekniikan perustutkinto, 180 osaamispistettä</a> <a href="koulutus.html" class="button">Tutustu</a> </div>
+										 <div class="col-xs-12 col-md-3 compare-box"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >Tieto- ja viestintätekniikan erikoisammattitutkinto, aikuiskoulutus, Datanomi (eat).</a> <a href="koulutus.html" class="button">Tutustu</a> </div>
+										 <div class="col-xs-12 col-md-3 compare-box"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >Tieto- ja viestintätekniikan ammattitutkinto, aikuiskoulutus, Datanomi (at)</a> <a href="koulutus.html" class="button">Tutustu</a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container visible-xs compare-table">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Koulutus alkaa</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">10.08.2018</div>
+									<div class="col-xs-12">Kevät 2019</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Opetuskieli</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Suomi</div>
+									<div class="col-xs-12">Suomi</div>
+									<div class="col-xs-12">Suomi, Englanti</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Koulutuksen laajuus</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">180 osaamispistettä</div>
+									<div class="col-xs-12">180 osaamispistettä</div>
+									<div class="col-xs-12">180 osaamispistettä</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Suunnittelu kesto</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">2 vuotta</div>
+									<div class="col-xs-12">2 vuotta</div>
+									<div class="col-xs-12">3 vuotta</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Opetusaika</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Päiväopetus</div>
+									<div class="col-xs-12">Päiväopetus</div>
+									<div class="col-xs-12">Iltaopetus</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Opetustapa</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Lähiopetus</div>
+									<div class="col-xs-12">Lähiopetus</div>
+									<div class="col-xs-12">Monimuoto</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Opiskelumuoto</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Ohjattu opetus</div>
+									<div class="col-xs-12">Ohjattu opetus</div>
+									<div class="col-xs-12">Ohjattu opetus</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Pohjakoulutus</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Peruskoulu</div>
+									<div class="col-xs-12">Peruskoulu</div>
+									<div class="col-xs-12">Peruskoulu</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="col-xs-12">Maksulinen</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="col-xs-12">Maksuton</div>
+									<div class="col-xs-12">Maksuton</div>
+									<div class="col-xs-12">Maksuton</div>								
+								</div>
+							</div>
+						</div>
+						<div class="container hidden-xs compare-page">
+							 <div class="row compared-items">
+									 <div class="col-md-3"></div>
+									 <div class="col-md-3 l-blue-top">
+										 <div class="col-xs-11 compare-box">
+											 <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											 <a href="koulutus.html" class="title" >Tieto ja viestintätekniikan perustutkinto, 180 osaamispistettä</a>
+											 <a href="koulutus.html" class="button">Tutustu</a>
+										 </div>
+									 </div>
+									 <div class="col-md-3 d-blue-top">
+										 <div class="col-xs-11 compare-box">
+											 <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											 <a href="koulutus.html" class="title" >Tieto- ja viestintätekniikan erikoisammattitutkinto, aikuiskoulutus, Datanomi (eat).</a>
+											 <a href="koulutus.html" class="button">Tutustu</a>
+										 </div>
+									 </div>
+									 <div class="col-md-3 l-blue-top">
+										 <div class="col-xs-11 compare-box">
+											 <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											 <a href="koulutus.html" class="title" >Tieto- ja viestintätekniikan ammattitutkinto, aikuiskoulutus, Datanomi (at)</a>
+											 <a href="koulutus.html" class="button">Tutustu</a>
+										 </div>
+									 </div>
+							 </div>
+							 <div class="row">
+									 <div class="col-md-3">
+										 <ul class="list-group">
+											 <li class="list-group-item">Koulutus alkaa</li>
+											 <li class="list-group-item">Opetuskieli</li>
+											 <li class="list-group-item">Koulutuksen laajuus</li>
+											 <li class="list-group-item">Suunnittelu kesto</li>
+											 <li class="list-group-item">Opetusaika</li>
+											 <li class="list-group-item">Opetustapa</li>
+											 <li class="list-group-item">Opiskelumuoto</li>
+											 <li class="list-group-item">Pohjakoulutus</li>
+											 <li class="list-group-item">Maksulinen</li>
+										 </ul>
+									 </div>
+									 <div class="col-md-3 l-blue-bottom">
+										 <ul class="list-group">
+											 <li class="list-group-item">10.08.2018</li>
+											 <li class="list-group-item">Suomi</li>
+											 <li class="list-group-item">180 osaamispistettä</li>
+											 <li class="list-group-item">2 vuotta</li>
+											 <li class="list-group-item">Päiväopetus</li>
+											 <li class="list-group-item">Lähiopetus</li>
+											 <li class="list-group-item">Ohjattu opetus</li>
+											 <li class="list-group-item">Peruskoulu</li>
+											 <li class="list-group-item">Maksuton</li>
+										 </ul>
+									 </div>	
+									 <div class="col-md-3 d-blue-bottom">
+										 <ul class="list-group">
+											 <li class="list-group-item">10.08.2018</li>
+											 <li class="list-group-item">Suomi</li>
+											 <li class="list-group-item">180 osaamispistettä</li>
+											 <li class="list-group-item">2 vuotta</li>
+											 <li class="list-group-item">Päiväopetus</li>
+											 <li class="list-group-item">Lähiopetus</li>
+											 <li class="list-group-item">Ohjattu opetus</li>
+											 <li class="list-group-item">Peruskoulu</li>
+											 <li class="list-group-item">Maksuton</li>
+										 </ul>
+									 </div>	
+									 <div class="col-md-3 l-blue-bottom right">
+										 <ul class="list-group">
+											 <li class="list-group-item">10.08.2018</li>
+											 <li class="list-group-item">Suomi</li>
+											 <li class="list-group-item">180 osaamispistettä</li>
+											 <li class="list-group-item">2 vuotta</li>
+											 <li class="list-group-item">Päiväopetus</li>
+											 <li class="list-group-item">Lähiopetus</li>
+											 <li class="list-group-item">Ohjattu opetus</li>
+											 <li class="list-group-item">Peruskoulu</li>
+											 <li class="list-group-item">Maksuton</li>
+										 </ul>
+									 </div>		
+							 </div>							   
+						</div>
+		   <footer class="container-fluid margin">
+				   <div class="container">
+					   <div class="row">
+						   <div class="col-xs-12 col-md-4">
+							   <ul class="site-links">
+								   <li><a href="#"><img src="images/opintopolku_large-fi.png" alt=""></a></li>
+								   <li>Oma Opintopolku</li>
+								   <li>Mikä on opintopolku</li>
+								   <li>Tietoturvaseloste</li>
+								   <li><a href="">Anna palautetta</a> </li>
+							   </ul>
+						   </div>
+						   <div class="col-xs-12 col-md-4">
+							   <div class="row site-icons">
+								   <div class="col-xs-6">
+										 <img src="images/logo_fi.svg" alt="">
+								   </div>
+								   <div class="col-xs-6">
+										 <img src="images/OPH_logo-fi.svg" alt="">
+								   </div>
+							   </div>
+							 </div>
+						   <div class="col-xs-12 col-md-4">
+							   <div class="row">
+								   <div class="col-xs-12">
+									   <p>Koulutuksen järjestäjät ja korkeakoulut ylläpitävät tietoja koulutuksistaan Opintopolussa. 
+										   Tietojen oikeellisuuden voit tarkistaa kyseisestä oppilaitoksesta tai korkeakoulusta.</p>
+								   </div>
+								   <div class="col-xs-12">
+									   <ul class="social-media">
+										   <li>Suomeksi</li>
+										   <li>In English</li>
+										   <li>På svenska</li>
+										   <li class="separator">|</li>
+										   <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+									   </ul>
+								   </div>
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+			   </footer>
+				   </div>
+				   <!-- /#page-content-wrapper -->
+			   </div>
+			   <!-- /#wrapper -->
+	   <script type="text/javascript" src="js/jquery.min.js"></script>	
+	   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	   <script>
+		   $(document).ready(function () {
+			   var trigger = $(".menu"),
+				   overlay = $(".overlay"),
+				   isClosed = false;
+				   trigger.click(function () {
+				   menu_cross();      
+				   });
+   
+				   function menu_cross() {
+   
+				   if (isClosed) {          
+					   overlay.hide();
+					   trigger.removeClass("is-open");
+					   trigger.addClass("is-closed");
+					   isClosed = false;
+				   } else {   
+					   overlay.show();
+					   trigger.removeClass("is-closed");
+					   trigger.addClass("is-open");
+					   isClosed = true;
+				   }
+			   }
+			   function checkCompareLayer (blockContent,blockId) {
+				   var compareFieldsSelected = $(".haku .poista").length > 0 ? true : false;
+				   var numberOfFieldsSelected = $(".haku .poista").length;
+				   var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
+				   var boxAlreadyExist = $("#box-"+blockId+"").length > 0 ? true : false;
+				   if (compareFieldsSelected) {
+					   if (numberOfFieldsSelected <= 3) {
+						   if (!isCompareLayerOpen) {
+							   $("#compare-row").removeClass("hidden");
+							   if (!boxAlreadyExist) {
+								   $("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-'+ blockId +'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >'+ blockContent +'</a> <a href="koulutus.html" class="button">Tutustu</a> </div>');		
+							   } else {
+								   $("#box-"+blockId+"").remove();
+							   }
+						   }
+					   }
+				   } else {
+					   $("#compare-row").addClass("hidden");
+					   $("#compared-subjects").html("");
+					   $("#compare-row").removeClass("closed");
+					   $(".toggle-compare").removeClass("closed");
+				   }
+			   }
+			   $(".search-results").on("click", ".compare-button span", function(e) {
+				   var buttonIndex = $(this).closest(".haku").index(".haku");
+				   var numberOfFieldsSelected = $(".haku .poista").length;
+				   var linkText = $(this).offsetParent(0)[0].children[2].children[0].innerText;
+				   if (!$(e.target).is(".poista")) {
+					   if (numberOfFieldsSelected <=2) {
+						   $(this).addClass("poista");
+						   checkCompareLayer (linkText,buttonIndex);
+					   } else {
+						   $("#alertModal").modal("show");
+					   }
+				   } else {
+					   $(this).removeClass("poista");
+					   $(".box-"+ buttonIndex + "").remove();						
+					   checkCompareLayer (linkText,buttonIndex);
+				   }
+					   
+			   });
+			   $(".clear-compare").on("click", function() {
+				   $(".compare-button span").removeClass("poista");
+				   checkCompareLayer("","");
+			   });
+			   $("#compare-row").on("click", ".compare-box .close", function() {
+				   var boxId = parseInt($(this).parents(".compare-box").attr("id").split("-")[1]);
+				   var compareBox = $(".compare-box").length;
+				   $(".haku:eq("+boxId+") .compare-button span").removeClass("poista");
+				   $("#box-"+boxId+"").css("display", "none");
+				   $("#box-"+boxId+".compare-box").remove();
+				   if (compareBox === 1){
+					   $("#compare-row").addClass("hidden");
+					   $("#compared-subjects").html("");
+				   }
+			   });	
+			   $(".toggle-compare").on("click", function(){
+				   $(this).toggleClass("closed");
+				   $("#compare-row").toggleClass("closed");
+			   });
+			   $('[data-toggle="offcanvas"]').click(function () {
+				   $('#wrapper').toggleClass("toggled");
+			   });
+			   $(".suosikkit i").on("click", function(){
+				   $(this).toggleClass( "fa-heart-o fa-heart");
+			   });
+			   if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
+				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
+			   }
+			   $(".filter-button").on("click", function(){
+				   $(this).toggleClass( "sulje");
+				   $(".filter-container").toggleClass("open");
+				   if($(window).innerWidth() <= 768) {
+					   $("body").toggleClass("no-scroll");
+				   }
+			   });
+			   $(window).on("resize", function() {
+				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action").outerHeight()));
+			   });
+			   
+		   });
+   </script>
+	</body>
+	</html>
+	
