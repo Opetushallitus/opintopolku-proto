@@ -1,0 +1,590 @@
+<html lang="en">
+		<head>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		 <title>Opintipolku - Toteutus</title>
+		 <link href="css/bootstrap.min.css" rel="stylesheet">
+		 <link href="css/oph-styles-min.css" rel="stylesheet">
+		 <link href="css/styles.css" rel="stylesheet">
+		</head>
+		<body>
+			 <div id="wrapper">
+					 <div class="container-fluid navigation-bar">
+							 
+				 </div>
+					 <div class="overlay"></div>
+				 
+					 <!-- Sidebar -->
+					 <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+						 <ul class="nav sidebar-nav">
+							 <li class="sidebar-brand">
+								 Valikko
+							 </li>
+							 <li>
+								 <ul class="languages">
+									 <li class="selected"><a href="#">SUOMEKSI</a></li>
+									 <li><a href="#">PÅ SVENSKA</a></li>
+									 <li><a href="#">IN ENGLISH</a></li>
+								 </ul>
+							 </li>
+							 <li class="selected">
+								 <a href="index.html">Etusivu</a>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lukio <span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+										 <li><a href="#">Opinnot lukiossa</a></li>
+										 <li><a href="#">Näin haet yhteishaussa</a></li>
+										 <li><a href="#">Opiskelijoiden valinta lukioihin</a></li>
+										 <li><a href="#">Ylioppilastutkinto</a></li>
+										 <li><a href="#">Erityislukiot</a></li>
+										 <li><a href="#">Kansainvälinen lukiokoulutus</a></li>
+										 <li><a href="#">Etälukiot</a></li>
+										 <li><a href="#">Vaihto-opiskelijaksi</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ammatillinen koulutus<span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+											 <li><a href="#">Mitä ammatillisessa voi opiskella</a></li>
+											 <li><a href="#">Ammatillinen perustutkinto</a></li>
+											 <li><a href="#">VALMA-koulutus</a></li>
+											 <li><a href="#">Ammatillinen erityisopetus</a></li>
+											 <li><a href="#">Oppisopimuskoulutus</a></li>
+											 <li><a href="#">Kaksoistutkinto</a></li>
+											 <li><a href="#">Näin haet yhteishaussa</a></li>
+											 <li><a href="#">Valintaperusteet ammatilliseen</a></li>
+											 <li><a href="#">Hakijan terveyden tila</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ammattikorkeakoulu<span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+											 <li><a href="#">Ammattikorkeakouluopintojen rakenne</a></li>
+											 <li><a href="#">Mitä AMK:ssa voi opiskella</a></li>
+											 <li><a href="#">Kuka voi hakea</a></li>
+											 <li><a href="#">Miten opiskelijat valitaan</a></li>
+											 <li><a href="#">AMK-tutkinto töiden oheella</a></li>
+											 <li><a href="#">Ylempi AMK-tutkinto</a></li>
+											 <li><a href="#">Siirtohaut</a></li>
+											 <li><a href="#">Ammattikorkeakoulujen erillishaut</a></li>
+											 <li><a href="#">Ammattikorkeakoulujen hakijapalvelut</a></li>
+											 <li><a href="#">Ammatilliset opettajakorkeakoulut</a></li>
+											 <li><a href="#">Avoin ammattikorkeakoulu</a></li>
+											 <li><a href="#">Erikoistumiskoulutus ammattikorkeakoulussa</a></li>
+											 <li><a href="#">Täydennyskoulutus</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Yliopisto<span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+											 <li><a href="#">Yliopistotutkintojen rakenne</a></li>
+											 <li><a href="#">Mitä yliopistossa voi opiskella</a></li>
+											 <li><a href="#">Kuka voi hakea</a></li>
+											 <li><a href="#">Miten opiskelijat valitaan</a></li>
+											 <li><a href="#">Yliopistojen erillishaut</a></li>
+											 <li><a href="#">Siirtohaku yliopistossa</a></li>
+											 <li><a href="#">Yliopistojen maisterikoulutukset</a></li>
+											 <li><a href="#">Erillisarvosanan suorittaminen</a></li>
+											 <li><a href="#">Jatkotutkinnot ja koulutukset</a></li>
+											 <li><a href="#">Yliopistojen hakijapalvelut</a></li>
+											 <li><a href="#">Avoin yliopisto</a></li>
+											 <li><a href="#">Erikoistumiskoulutus yliopistossa</a></li>
+											 <li><a href="#">Täydennyskoulutus</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Oppisopimus<span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+											 <li><a href="#">Opiskelijalle</a></li>
+											 <li><a href="#">Työnantajalle</a></li>
+											 <li><a href="#">Yrittäjälle</a></li>
+									 </ul>
+							 </li>
+							 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aikuiskoulutus<span class="caret"></span></a>
+								 <ul class="dropdown-menu" role="menu">
+									 <li><a href="#">Mietitkö aikuiskoulutusta</a></li>
+									 <li><a href="#">Peruskoulu aikuisille</a></li>
+									 <li><a href="#">Aikuislukio</a></li>
+									 <li><a href="#">Aikuisten ammatillinen koulutus</a></li>
+									 <li><a href="#">Korkeakouluopinnot aikuisille</a></li>
+									 <li><a href="#">Opettajan koulutus</a></li>
+									 <li><a href="#">Kansanopistot</a></li>
+									 <li><a href="#">Kansalais- ja työväenopistot</a></li>
+									 <li><a href="#">Kesäyliopistot</a></li>
+									 <li><a href="#">Opintokeskukset ja opintokerhot</a></li>
+									 <li><a href="#">Kielitutkinnot ja kielikokeet</a></li>
+									 <li><a href="#">Työvoimakoulutus</a></li>
+								 </ul>
+							 </li>
+							 <li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Koulutuksen valinta<span class="caret"></span></a>
+									 <ul class="dropdown-menu" role="menu">
+											 <li><a href="#">Mitä peruskoulun jälkeen</a></li>
+											 <li><a href="#">Muita vaihtoehtoja peruskoulun jälkeen</a></li>
+											 <li><a href="#">Ammatinvalinta</a></li>
+											 <li><a href="#">Yhteishaku</a></li>
+											 <li><a href="#">Jos sinulla on jo tutkinto</a></li>
+											 <li><a href="#">Ohjaus- ja neuvontapalvelut</a></li>
+											 <li><a href="#">Opintojen rahoitus</a></li>
+											 <li><a href="#">Opiskelijamaksut</a></li>
+											 <li><a href="#">Ulkomailla opiskelu</a></li>
+											 <li><a href="#">Maahanmuuttajien koulutus</a></li>
+											 <li><a href="#">Esteettömyys ja oppimisen tuki</a></li>
+											 <li><a href="#">Yrittäjäksi</a></li>
+									 </ul>
+									 </li>
+									 <li>
+										 <a href="#">Anna palautetta</a>
+									 </li>	  
+						 </ul>
+					 </nav>
+					 <!-- /#sidebar-wrapper -->
+			 
+					 <!-- Page Content -->
+					 <div id="page-content-wrapper">
+					 <div class="container">
+						 <div class="row">
+								 <button type="button" class="menu is-closed" data-toggle="offcanvas">
+										 <span class="hamb-top"></span>
+										 <span class="hamb-middle"></span>
+										 <span class="hamb-bottom"></span>
+									 </button>
+									 <a class="navbar-brand" href="index.html">Opintopolku</a>
+									 <div class="wrapper"><input type="text" class="nabvar-search oph-input" placeholder="Etsi..."></div>
+						 </div>
+					 </div>
+					 <div class="container-fluid" id="call-to-action">
+							 <div class="jumbotron">
+								 <div class="container">
+										 <div class="row">
+												 <div class="col-xs-12 col-md-8 header-search">
+														 <input id="regular-input" class="oph-input" type="text" placeholder="Etsi ja vertaile koulutuksia tai opplaitoksia">
+														 <a href="search.html" class="search-button"></a>
+												 </div>
+											 </div>
+								 </div>
+								 <div class="container">
+									 <div class="row">
+										 <div class="col-xs-12">
+											 <div class="filter-button" role="button">
+			 
+											 </div>
+										 </div>
+									 </div>
+								 </div>
+									 
+							 </div>
+							</div>
+							 <div class="row filters-layer">
+								<div class="filter-container">
+									<div class="filter-options">
+										<div class="col-xs-12 filters-main">
+										<div class="form-group">
+											<ul class="filter-menu">
+												<li><a href="#">Kaikki kategoriat</a></li>
+												<li class="selected"><a href="#">Koulutukset</a></li>
+											</ul>
+										</div>
+										<div class="form-group">
+											<h5>Pohjakoulutus</h5>	
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Peruskoulu
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Lukio
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" value="">
+													<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+													Ammatillinen koulutus
+												</label>
+											</div>
+											<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Korkeakoulutus
+													</label>
+											</div>
+										</div>
+										<div class="form-group tyyppi">
+											<h5>Koulutustyyppi</h5>	
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Lukio
+													</label>
+													<span class="cr ch-1"></span>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Ammatillinen koulutus
+													</label>
+													<span class="cr ch-2"></span>
+												</div>
+												<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															Korkeakoulutus
+														</label>
+														<span class="cr ch-3"></span>
+												</div>
+											<div class="checkbox ck-4">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Avoin korkeakoulu
+													</label>
+													<span class="cr ch-4"></span>
+												</div>	
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" value="">
+															<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+															Työväenopiston kurssi
+														</label>
+														<span class="cr ch-5"></span>
+													</div>
+												</div>
+												<div class="form-group">
+														<h5>Opetusmuoto</h5>	
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox" value="">
+																	<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	Lähiopetus
+																</label>
+															</div>
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox" value="">
+																	<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																	Itsenäinen opiskelu
+																</label>
+															</div>
+															<div class="checkbox">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+																		Ohjattu opiskelu
+																	</label>
+															</div>
+												</div>
+											<hr>
+											<div class="form-group">
+												<h5>Paikkakunta</h5>
+												<input id="regular-input" class="oph-input" type="text" placeholder="Syötä paikkakunnan nimi">
+											</div>
+											<hr>
+											<div class="form-group">
+												<h5>Opetusaika</h5>	
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Päiväopetus
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Iltaopetus
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Viikonloppuopetus
+													</label>
+												</div>
+											</div>
+											<hr>
+											<div class="form-group action-buttons">
+												<a href="#" role="button" class="btn btn-primary">HAE</a>
+												<a class="clear-compare" href="#">Poista rajaukset</a>
+											</div>		
+										</div>
+									</div>
+								</div>	
+						</div>
+
+							 <div class="container oppilaitos">
+									<div class="row info-page">
+											<div class="col-xs-12 col-md-9 left-column toteutus">
+													<h1><a class="header" href="javascript:history.go(-1)"><span class="light-font">Järviseudun Ammatti-Instituutti, Alajärvi</span> <span>Tieto- ja viestintätekniikan perustutkinto</span> </a></h1>
+											<div class="row panel-body">
+											<div class="col-xs-12 col-md-6 toteutus-blue">
+												<div class="row"> 
+													<div class="col-xs-12 header">
+														<h2>Koulutuksen Tiedot	<i class="fa fa-heart-o" aria-hidden="true"></i></h2>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="col-xs-12 course-info info">
+															<div class="col-xs-7 col-md-4">Koulutusalkaa:</div><div class="col-xs-5 col-md-8">10.8.2018</div>
+															<div class="col-xs-7 col-md-4">Opetuskieli</div><div class="col-xs-5 col-md-8">Suomi</div>
+															<div class="col-xs-7 col-md-4">Koulutuksenlaajuus:</div><div class="col-xs-5 col-md-8">180 osaamispistettä</div>
+															<div class="col-xs-7 col-md-4">Suunniteltukesto:</div><div class="col-xs-5 col-md-8">2 vuotta</div>
+															<div class="col-xs-7 col-md-4">Opetusaika:</div><div class="col-xs-5 col-md-8">Iltaäopetus</div>
+															<div class="col-xs-7 col-md-4">Opetustapa:</div><div class="col-xs-5 col-md-8">Lähiopetus</div>
+															<div class="col-xs-7 col-md-4">Opiskelumuoto:</div><div class="col-xs-5 col-md-8">Ohjattu opiskelu, Itsenäinen opiskelu</div>
+															<div class="col-xs-7 col-md-4">Pohjakoulutus: </div><div class="col-xs-5 col-md-8">peruskoulu</div>
+															<div class="col-xs-7 col-md-4">Maksulinen:</div><div class="col-xs-5 col-md-8">Maksuton</div>
+														</div>
+													</div>
+												</div>				
+											</div>
+											<div class="col-xs-12 col-md-6 toteutus-green">
+													<div class="row"> 
+															<div class="col-xs-12 header">
+																<h2>Koulutuksen hakeminen</h2>
+															</div>
+														</div>	
+														<div class="row">
+																<div class="col-xs-12 info">
+																	<p><strong>Haku päättynyt</strong></p>
+																</div>
+														</div>				
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12">
+														<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+																<div class="panel panel-default">
+																	<div class="panel-heading" role="tab" id="headingOne">
+																	<h4 class="panel-title">
+																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+																		Koulutuksen tavoitteet
+																		</a>
+																	</h4>
+																	</div>
+																	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
+																	<div class="panel-body">
+																			<p>Tieto- ja tietoliikennetekniikan perustutkinnon suorittanut tekee tuotanto-, asennus-, huolto- ja kunnossapitotehtäviä toimien työ-, sähkötyö- ja sähköturvallisuusmääräysten sekä salassapitomääräysten mukaisesti. Tutkinnon suorittanut elektroniikka- asentaja tekee elektroniikkatuotannon testauksia, korjauksia ja käyttöönottotöitä tai elektroniikka-alan sovelluksiin liittyviä huoltotöitä, asennuksia ja asiakaspalvelua. ICT-asentaja tekee tietokone- ja tietoliikennelaitteiden asennuksen ja käyttöönoton.</p>
+																	</div>
+																	</div>
+																</div>
+																<div class="panel panel-default">
+																	<div class="panel-heading" role="tab" id="headingTwo">
+																	<h4 class="panel-title">
+																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+																		Valintaperusteet
+																		</a>
+																	</h4>
+																	</div>
+																	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+																	<div class="panel-body">	
+																		<div data-bind-html-if-safe="content | tarjontaFilter"><p class="ng-scope">Näin pisteet lasketaan, kun haet peruskoulun jälkeen:</p> <h3 class="ng-scope">Pisteitä ensi kertaa hakeville ja peruskoulun jälkeisiä valmistavia opintoja suorittaneille</h3> <ul class="ng-scope"> <li><b>Saat 8 pistettä, jos sinulla ei hakuajan päättyessä ole opiskelupaikkaa ammatilliseen perustutkintoon johtavassa koulutuksessa tai lukiokoulutuksessa<br></b></li> <li><b>Saat 6 pistettä, jos olet suorittanut perusopetuksen oppimäärän samana vuonna kun haet tai olet saanut perusopetuksen päättötodistuksen&nbsp; hakuajan päättymistä edeltävän kuuden kuukauden aikana, esimerkiksi edellisenä syksynä.<br></b></li> <li><b>Saat 6 pistettä, jos olet suorittanut jonkun seuraavista:</b></li> <ul> <li>kymppiluokan (vähintään 1100 tunnin laajuisen lisäopetuksen)</li> <li>ammatilliseen peruskoulutukseen valmentavan koulutuksen (VALMA),&nbsp; vähintään 30 osaamispisteen laajuisen koulutuksen</li> <li>ammattistartin (vähintään 20 opintoviikon laajuisen ammatilliseen peruskoulutukseen ohjaavan ja valmistavan koulutuksen)</li> <li>valmentavan ja kuntouttavan opetuksen ja ohjauksen</li> <li>maahanmuuttajien ammatilliseen peruskoulutukseen valmistavan koulutuksen</li> <li>maahanmuuttajille ja muille vieraskielisille tarkoitetun lukiokoulutukseen valmistavan koulutuksen</li> <li>kotitalousopetuksen / talouskoulun (ei ammatillisena peruskoulutuksena suoritetun)</li> <li>kansanopiston vähintään lukuvuoden mittaisen linjan.</li> </ul> <li><b>Saat 2 pistettä ammatillisesta koulutuksesta, jonka olet hakiessasi merkinnyt 1. hakutoiveeksi.<br></b></li> </ul> <h3 class="ng-scope">Pisteitä sukupuolen perusteella&nbsp;</h3> <ul class="ng-scope"> <li><b>Saat 2 pistettä, jos hakemaasi ammatilliseen koulutukseen ensisijaisesti hakeneista alle 30 prosenttia on samaa sukupuolta kuin sinä.</b></li> </ul> <h3 class="ng-scope">Pisteitä yleisestä koulumenestyksestä</h3> <p class="ng-scope">Saat 1–16 pistettä yleisestä koulumenestyksestä keskiarvon perusteella. Valinnassa lasketaan keskiarvo seuraavista oppiaineista: äidinkieli ja kirjallisuus, toinen kotimainen kieli, vieraat kielet, uskonto tai elämänkatsomustieto, historia, yhteiskuntaoppi, matematiikka, fysiikka, kemia, biologia, maantieto, liikunta, terveystieto, musiikki, kuvataide, käsityö, kotitalous.<br>&nbsp;<br>Jos sinulla on arvosana useammasta samaan yhteiseen oppiaineeseen kuuluvasta vähintään kahden vuosiviikkotunnin valinnaisaineesta, lasketaan valinnassa ensin niiden keskiarvo. Pisteesi yleisestä koulumenestyksestä lasketaan siis yhteisen aineen arvosanan ja siihen kuuluvan valinnaisaineen keskiarvosta tai valinnaisaineiden keskiarvosta.</p> <p class="ng-scope">Yleisen koulumenestyksen pisteet lasketaan peruskoulun päättötodistuksesta. Korotetut arvosanat otetaan huomioon, jos sinulla on korotuksesta todistus.</p> <table class="table table-striped table-condensed table-responsive ng-scope"> <tbody> <tr> <td valign="top" width="381"> <p><b>Keskiarvo</b></p> </td> <td valign="top" width="380"> <p><b>Pisteitä</b></p> </td> </tr> <tr> <td valign="top" width="381"> <p>5,50–5,74&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td valign="top" width="380"> <p>1</p> </td> </tr> <tr> <td valign="top" width="381"> <p>5,75<b>–</b>5,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td valign="top" width="380"> <p>2</p> </td> </tr> <tr> <td width="381"> <p>6,00<b>–</b>6,24&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>3</p> </td> </tr> <tr> <td width="381"> <p>6,25<b>–</b>6,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>4</p> </td> </tr> <tr> <td width="381"> <p>6,50<b>–</b>6,74&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>5</p> </td> </tr> <tr> <td width="381"> <p>6,75<b>–</b>6,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>6</p> </td> </tr> <tr> <td width="381"> <p>7,00<b>–</b>7,24&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>7</p> </td> </tr> <tr> <td width="381"> <p>7,25<b>–</b>7,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>8</p> </td> </tr> <tr> <td width="381"> <p>7,50<b>–</b>7,74&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>9</p> </td> </tr> <tr> <td width="381"> <p>7,75<b>–</b>7,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>10</p> </td> </tr> <tr> <td width="381"> <p>8,00<b>–</b>8,24&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>11</p> </td> </tr> <tr> <td width="381"> <p>8,25<b>–</b>8,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>12</p> </td> </tr> <tr> <td width="381"> <p>8,50<b>–</b>8,74&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>13</p> </td> </tr> <tr> <td width="381"> <p>8,75<b>–</b>8,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>14</p> </td> </tr> <tr> <td width="381"> <p>9,00<b>–</b>9,24&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>15</p> </td> </tr> <tr> <td width="381"> <p>9,25<b>–</b>10,00&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="380"> <p>16</p> </td> </tr> </tbody> </table> <p class="ng-scope">&nbsp;</p> <h3 class="ng-scope"><b>Pisteitä painotettavista arvosanoista</b></h3> <p class="ng-scope">Saat 1–8 pistettä painotettavien arvosanojen keskiarvosta. Kaikilla koulutusaloilla otetaan huomioon perusopetuksen päättötodistuksen arvosanat liikunnassa, kuvataiteessa, käsityössä, kotitaloudessa ja musiikissa. Kolmesta parhaasta aineesta lasketaan valinnassa niiden keskiarvo. Jos olet opiskellut vähemmän kuin kolme ainetta, keskiarvo lasketaan niistä.</p> <p class="ng-scope">Jos sinulla on arvosana useammasta samaan yhteiseen oppiaineeseen kuuluvasta vähintään kahden vuosiviikkotunnin valinnaisaineesta, lasketaan valinnassa ensin niiden keskiarvo. Pisteesi painotettavista arvosanoista lasketaan siis yhteisen aineen arvosanan ja siihen kuuluvan valinnaisaineen keskiarvosta tai valinnaisaineiden keskiarvosta.</p> <p class="ng-scope">&nbsp;</p> <table class="table table-striped table-condensed table-responsive ng-scope"> <tbody> <tr> <td valign="top" width="407"> <p><b>Keskiarvo</b></p> </td> <td valign="top" width="407"> <p><b>Pisteitä</b></p> </td> </tr> <tr> <td width="407"> <p>6,00–6,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>1</p> </td> </tr> <tr> <td width="407"> <p>6,50–6,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>2</p> </td> </tr> <tr> <td width="407"> <p>7,00–7,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>3</p> </td> </tr> <tr> <td width="407"> <p>7,50–7,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>4</p> </td> </tr> <tr> <td width="407"> <p>8,00–8,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>5</p> </td> </tr> <tr> <td width="407"> <p>8,50–8,99&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>6</p> </td> </tr> <tr> <td width="407"> <p>9,00–9,49&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>7</p> </td> </tr> <tr> <td width="407"> <p>9,50–10,00&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>8</p> </td> </tr> </tbody> </table> <p class="ng-scope">&nbsp;</p> <p class="ng-scope">Jos olet suorittanut perusopetuksen oppimäärän aikuiskoulutuksena, käytetään pisteiden laskemisessa yleisestä koulumenestyksestä laskettua keskiarvoa.</p> <p class="ng-scope">&nbsp;</p> <h3 class="ng-scope"><b>Pisteitä työkokemuksesta</b></h3> <ul class="ng-scope"> <li><b>Saat 1–3 pistettä työkokemuksesta tai osallistumisesta työpajatoimintaan tai työharjoitteluun / työkokeiluun</b>.</li> </ul> <p class="ng-scope">Työkokemukseksi hyväksytään työsuhteessa saatu työkokemus, jonka olet hankkinut peruskoulun jälkeen tai täytettyäsi 16 vuotta. Osa-aikatyössä 150 tunnin mittainen saman työnantajan palveluksessa tehty työ vastaa yhden kuukauden työkokemusta.&nbsp;</p> <p class="ng-scope">Työharjoittelu / työkokeilu tarkoittaa harjoittelua, johon työ- ja elinkeinotoimisto on sinut ohjannut.&nbsp;</p> <p class="ng-scope">Oppisopimuskoulutuksesta luetaan työkokemukseksi todistuksissa mainittu työkokemuksen määrä.&nbsp;</p> <p class="ng-scope">Hakemuksessa otetaan huomioon työkokemus, joka on saatu ennen hakuajan päättymistä. Jos sinulla esimerkiksi on työsopimus ajalle 1.6.-31.12.2013 ja hakuaika on 25.9.-4.10. , niin työkokemukseksi lasketaan ajanjakso 1.6. -4.10. Saat työkokemuksesta yhden pisteen.</p> <p class="ng-scope">&nbsp;</p> <table class="table table-striped table-condensed table-responsive ng-scope"> <tbody> <tr> <td valign="top" width="407"> <p><b>Työkokemuksen pituus</b></p> </td> <td valign="top" width="407"> <p>Pisteitä</p> </td> </tr> <tr> <td width="407"> <p>3 kk–alle 6 kk&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&ensp;</p> </td> <td width="407"> <p>1</p> </td> </tr> <tr> <td width="407"> <p>6 kk–alle 12 kk&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>2</p> </td> </tr> <tr> <td width="407"> <p>12 kk–&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;</p> </td> <td width="407"> <p>3</p> </td> </tr> </tbody> </table> <p class="ng-scope">&nbsp;</p> <h3 class="ng-scope"><b>Lisäpisteet urheilullisista saavutuksista</b>&nbsp;</h3> <ul class="ng-scope"> <li><b>Voit saada 1–3 lisäpistettä urheilullisista saavutuksista, jos haet urheilijalle tarkoitettuun ammatilliseen koulutukseen.</b></li> </ul> <h3 class="ng-scope"><b>Pääsy- ja soveltuvuuskokeet</b></h3> <p class="ng-scope">Kaikki hakijat saavat kutsun kokeisiin, jos koulutuksessa järjestetään pääsy- ja soveltuvuuskoe.&nbsp; Koe voi muodostua eri osista. Oppilaitokset tiedottavat kokeen eri vaiheista. &nbsp;</p> <p class="ng-scope">Jos olet hakenut useaan koulutukseen, sinut kutsutaan kokeeseen ylimpään hakutoiveeseen, jossa on koe. Koetuloksesi huomioidaan kuitenkin kaikissa samaan valintakoeryhmään kuuluvissa koulutuksissa.</p> <p class="ng-scope">Valintakoeryhmä tarkoittaa sitä, että monella oppilaitoksella on yksi valintakoe. Silloin yksi koe riittää kaikkiin saman ryhmän koulutuksiin.&nbsp;</p> <ul class="ng-scope"> <li><b>Voit saada 0–10 pistettä pääsy- ja soveltuvuuskokeesta.&nbsp;</b><b><span lang="FI">Kokeista saadut pisteet ovat lisäpisteitä valinnassa, joten 0 pistettä kokeesta ei ole esteenä opiskelijaksi valinnalle.</span></b></li> <li>Huomaathan, että kaikissa koulutuksissa ei ole pääsy- ja soveltuvuuskokeita. Tiedot pääsykokeesta löytyvät tämän sivun alaosasta.</li> <li>Pääsykoetulosta käytetään kaikissa vastaavissa koulutuksissa, joihin olet hakenut. Jos olet hakenut useille eri aloille, on mahdollista, että saat kutsun useisiin kokeisiin.</li> </ul> <h3 class="ng-scope"><b>Tasapistetilanne</b></h3> <p class="ng-scope">Saman pistemäärän saaneet hakijat asetetaan järjestykseen seuraavien perusteiden mukaisesti:</p> <ol class="ng-scope"> <li>hakutoivejärjestys</li> <li>mahdollinen&thinsp; pääsy- tai soveltuvuuskokeesta saatava pistemäärä</li> <li>yleinen koulumenestys</li> <li>painotettavat arvosanat.</li> </ol> <p class="ng-scope">Jos pistemäärä on tämän jälkeen edelleen sama, opiskelijat valitaan satunnaisjärjestyksessä.<br>&nbsp;</p> <h3 class="ng-scope"><b>Kielikokeet</b></h3> <p class="ng-scope">Saat kutsun kielikokeisiin, jos äidinkielesi on muu kuin opetuskieli eikä kielitaitoasi ole voitu todentaa muilla tavoin,&nbsp;esimerkiksi alla mainituilla todistuksilla. Kokeilla osoitat, että sinulla on riittävät valmiudet opetuskielen suulliseen ja kirjalliseen käyttämiseen. Kokeet ovat kaikille hakijoille samat.</p> <p class="ng-scope">Jos sinulla on jokin alla mainituista todistuksista, sinua ei kutsuta kielikokeeseen.</p> <p class="ng-scope"><b>&nbsp;Opetuskielen taitoasi pidetään riittävänä, jos</b></p> <ul class="ng-scope"> <li>sinulla on perusopetuksen päättötodistus, joka on suoritettu vastaanottavan oppilaitoksen opetuskielellä (suomi, ruotsi tai saame).</li> <li>olet suorittanut vähintään arvosanalla 7 perusopetuksessa toisen kotimaisen A-kielen oppimäärän. Kielen on oltava vastaanottavan oppilaitoksen opetuskieli.</li> <li>olet suorittanut vähintään arvosanalla 7 perusopetuksen suomi tai ruotsi toisena kielenä oppimäärän. Kielen on oltava vastaanottavan oppilaitoksen opetuskieli.</li> <li>olet suorittanut lukion oppimäärän tai ylioppilastutkinnon vastaanottavan oppilaitoksen opetuskielellä.</li> <li>olet suorittanut lukiokoulutuksen koko oppimäärän jossakin seuraavista äidinkieli ja kirjallisuus-oppiaineen oppimääristä: suomi äidinkielenä, ruotsi äidinkielenä, saame äidinkielenä, suomi toisena kielenä, ruotsi toisena kielenä, suomi saamenkielisille, suomi viittomakielisille. Kielen on oltava vastaanottavan oppilaitoksen opetuskieli.</li> <li>olet suorittanut lukiokoulutuksen toisen kotimaisen kielen koko oppimäärän. Kielen on oltava vastaanottavan oppilaitoksen opetuskieli.</li> <li>olet suorittanut yleisten kielitutkintojen suomen tai ruotsin kielen tutkinnon kaikki osakokeet vähintään taitotasolla 3. Tai olet suorittanut Valtionhallinnon kielitutkintojen suomen tai ruotsin kielen suullisen ja kirjallisen taidon tutkinnon vähintään taitotasolla tyydyttävä.</li> <li>olet&nbsp;suorittanut hyväksytysti valtakunnallisen kielikokeen hakukohteen opetuskielessä.</li> </ul> <p class="ng-scope">Oppilaitos voi jättää hakijan valitsematta ammatilliseen peruskoulutukseen, jos hänellä ei ole valmiutta opetuskielen suulliseen ja kirjalliseen käyttämiseen sekä ymmärtämiseen.</p> <h3 class="ng-scope"><b>Harkintaan perustuva valinta</b></h3> <p class="ng-scope">Oppilaitos voi ottaa opiskelijoita koulutuksiin harkinnan perusteella. Tällöin valinta tehdään valintapistemääristä riippumatta. Yhteen hakukohteeseen voidaan ottaa tällä tavoin enintään 30 prosenttia opiskelijoista. Harkintaan perustuvan valinnan syitä ovat:</p> <ul class="ng-scope"> <li>oppimisvaikeudet</li> <li>sosiaaliset syyt</li> <li>koulutodistusten puuttuminen tai todistusten vertailuvaikeudet.&nbsp;</li> </ul> <p class="ng-scope">Koulutustarpeesi ja edellytyksesi suoriutua opinnoista arvioidaan ja otetaan huomioon, kun valintapistemäärästä poiketaan.</p></div>
+																	</div>
+																	</div>
+																</div>
+																<div class="panel panel-default">
+																	<div class="panel-heading" role="tab" id="headingThree">
+																	<h4 class="panel-title">
+																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+																		Hakukelpoisuusvaatimukset
+																		</a>
+																	</h4>
+																	</div>
+																	<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+																	<div class="panel-body">
+																		<p>Perusopetuksen tai vastaavan aiemman oppimäärän suorittaneet voivat hakea peruskoulupohjaiseen ammatilliseen perustutkintoon. Jos hakijalla on ulkomailla suoritettu tutkinto tai hänen oppivelvollisuutensa on keskeytynyt, hän voi hakea peruskoulupohjaiseen ammatilliseen koulutukseen harkintaan perustuvan haun kautta. Tällöin koulutuksen järjestäjä arvioi erikseen hakijan koulutustarpeen ja edellytykset suoriutua opinnoista. Lukion tai ylioppilastutkinnon suorittaneet eivät voi hakea peruskoulupohjaiseen ammatilliseen koulutukseen. Ammatillisen perustutkinnon, muun ammatillisen tutkinnon tai korkeakoulututkinnon suorittaneet eivät voi hakea ammatilliseen koulutukseen toisen asteen yhteishaussa.</p>
+																	</div>
+																	</div>
+																</div>
+																<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingFour">
+																		<h4 class="panel-title">
+																			<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+																				Jatko-opintomahdollisuudet
+																			</a>
+																		</h4>
+																		</div>
+																		<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0px;">
+																		<div class="panel-body">
+																			<p>Ammatillisista perustutkinnoista sekä ammatti- ja erikoisammattitutkinnoista saa yleisen jatko-opintokelpoisuuden ammattikorkeakouluihin ja yliopistoihin. Luonteva jatko-opintoväylä on tekniikan ja liikenteenalan ammattikorkeakoulututkinto, insinööri(AMK). Yliopistossa voi suorittaa esimerkiksi tekniikan kandidaatin ja diplomi-insinöörin tutkinnon. Ammatillisen opettajan pedagogiset opinnot antavat jatkokoulutusmahdollisuuden ammatillisen opettajan työtehtäviin.</p>
+																		</div>
+																		</div>
+																	</div>
+																</div>
+												</div>
+											</div>
+										</div>
+											<div class="col-xs-12 col-md-3 right-column">
+												<div class="row">
+														<div class="col-md-12">
+																<ul>
+																	<li><h1><a href="#"><span class="light-font">Järviseudun Ammatti-Instituutti, Alajärvi</span></a></h1></li>
+																	<li><a href="oppilaitos2.html" role="button" class="btn btn-primary tutustu-button">Tutustu oppilaitokseen</a></li>
+																</ul>
+														</div>
+													<div class="col-md-12">
+															<ul>
+																<li><span>Yhteyshenkilö:</span> </li>
+																<li>Opinto-ohjaaja</li>
+																<li>Olli Ohjaaja</li>
+																<li><a href="mailto:pirkko.etula@jamin.fi">Sähköposti: pirkko.etula(at)jamin.fi</a></li>
+																<li><a href="tel:+35862412700">Puhelin: 06 2412 700</a></li>
+																<li><a class="external-link" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> Oppilaitoksen kotisivu</a></li>
+															</ul>
+													</div>
+													<div class="col-md-12">
+															<hr/>
+													</div>
+												
+													<div class="col-md-12">
+															<ul>
+																<li><span>Tutkintonimikkeet:</span> </li>
+																<li>Datanomi</li>	
+															</ul>
+													</div>
+												</div>
+											</div>											
+										</div>
+							 </div>
+							 <div class="container-fluid app-navigation-bar">
+									<div class="container">
+										<div class="row"> 
+											<div class="col-xs-4 previous"><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i></a></div>
+											<div class="col-xs-4 search"><a href="search.html"><i class="fa fa-circle-thin" aria-hidden="true"></i></a></div>
+											<div class="col-xs-4 next"><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i></a></div>
+										</div>
+									</div>
+								 </div>
+			 <footer class="container-fluid">
+					 <div class="container">
+						 <div class="row">
+							 <div class="col-xs-12 col-md-4">
+								 <ul class="site-links">
+									 <li><a href="#"><img src="images/opintopolku_large-fi.png" alt=""></a></li>
+									 <li>Oma Opintopolku</li>
+									 <li>Mikä on opintopolku</li>
+									 <li>Tietoturvaseloste</li>
+									 <li><a href="">Anna palautetta</a> </li>
+								 </ul>
+							 </div>
+							 <div class="col-xs-12 col-md-4">
+								 <div class="row site-icons">
+									 <div class="col-xs-6">
+											 <img src="images/logo_fi.svg" alt="">
+									 </div>
+									 <div class="col-xs-6">
+											 <img src="images/OPH_logo-fi.svg" alt="">
+									 </div>
+								 </div>
+								 </div>
+							 <div class="col-xs-12 col-md-4">
+								 <div class="row">
+									 <div class="col-xs-12">
+										 <p>Koulutuksen järjestäjät ja korkeakoulut ylläpitävät tietoja koulutuksistaan Opintopolussa. 
+											 Tietojen oikeellisuuden voit tarkistaa kyseisestä oppilaitoksesta tai korkeakoulusta.</p>
+									 </div>
+									 <div class="col-xs-12">
+										 <ul class="social-media">
+											 <li>Suomeksi</li>
+											 <li>In English</li>
+											 <li>På svenska</li>
+											 <li class="separator">|</li>
+											 <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+											 <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+											 <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+										 </ul>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </footer>
+								 
+				 		 
+					 </div>
+					 <!-- /#page-content-wrapper -->
+			 
+				 </div>
+				 <!-- /#wrapper -->
+		 <script type="text/javascript" src="js/jquery.min.js"></script>	
+		 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		 <script>
+			 jQuery(document).ready(function () {
+			 var trigger = jQuery(".menu"),
+				 overlay = jQuery(".overlay"),
+				 isClosed = false;
+	 
+				 trigger.click(function () {
+				 menu_cross();      
+				 });
+	 
+				 function menu_cross() {
+	 
+				 if (isClosed) {          
+					 overlay.hide();
+					 trigger.removeClass("is-open");
+					 trigger.addClass("is-closed");
+					 isClosed = false;
+				 } else {   
+					 overlay.show();
+					 trigger.removeClass("is-closed");
+					 trigger.addClass("is-open");
+					 isClosed = true;
+				 }
+			 }
+				 jQuery('[data-toggle="offcanvas"]').click(function () {
+						 jQuery("#wrapper").toggleClass("toggled");
+				 });
+				 		jQuery(".suosikkit i").on("click", function(){
+						 jQuery(this).toggleClass( "fa-heart-o fa-heart");
+						});
+					 jQuery(".compare-button span").on("click", function(){
+						 jQuery(this).toggleClass( "poista");
+					 });
+					 jQuery(".filter-button").on("click", function(){
+						 jQuery(this).toggleClass( "sulje");
+					 });
+					 jQuery("[data-target='#koulutusModal']").on("click", function () {
+						var data = jQuery(this).attr("koulutus-data").replace(/\s/g,'').split("|");
+						jQuery(".modal .course-info").text("");
+						data.forEach(function(element) {
+							jQuery(".modal .course-info").append("<div class=\"col-md-2 col-xs-4 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-10 col-xs-8\">" + element.split(":")[1] + "</div>");
+						});
+						 var schoolName = jQuery(this).attr("nimi-data");
+						 jQuery(".modal .school-link").text(schoolName);
+						 jQuery("#koulutusModal").modal("show");
+					 });
+			if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
+			}
+			$(".filter-button").on("click", function(){
+				$(this).toggleClass( "sulje");
+				$(".filter-container").toggleClass("open");
+				if($(window).innerWidth() <= 768) {
+					$("body").toggleClass("no-scroll");
+				}
+			});
+			$(window).on("resize", function() {
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action").outerHeight()));
+			});
+					
+				});
+	 </script>
+		</body>
+		</html>
+		
