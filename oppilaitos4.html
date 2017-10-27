@@ -697,8 +697,7 @@
 						   boxIndex = $(this).parent().index(".text");
 					   jQuery(".modal .course-info").text("");
 					   data.forEach(function (element) {
-						   jQuery(".modal .course-info").append("<div class=\"col-md-3 col-xs-7 education-info\">" + element.split(":")[
-							   0] + ": </div> <div class=\"col-md-9 col-xs-5\">" + element.split(":")[1] + "</div>");
+						jQuery(".modal .course-info").append("<div class=\"col-md-3 col-xs-5 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-9 col-xs-7\">" + element.split(":")[1] + "</div>");
 					   });
 					   jQuery("#koulutusModal .school-link").text(schoolName);
 					   jQuery("#koulutusModal .school-intro").text(schoolIntro);
