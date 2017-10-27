@@ -1076,8 +1076,8 @@
 							$("#compare-row").removeClass("hidden");
 							if (!boxAlreadyExist) {
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
-									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="koulutus.html" class="title" >' +
-									blockContent + '</a> <a href="koulutus.html" class="button">Tutustu</a> </div>');
+									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="'+blockContent.link+'" class="title" >' +
+									blockContent.text + '</a> <a href="'+blockContent.link+'" class="button">Tutustu</a> </div>');
 							} else {
 								$("#box-" + blockId + "").remove();
 							}
@@ -1094,7 +1094,18 @@
 			compareButton.on("click", ".compare-button span", function (e) {
 				var buttonIndex = $(this).closest(".search-box").index(".search-box ");
 				var numberOfFieldsSelected = $(".search-box .poista").length;
-				var linkText = $(this).closest(".search-box").find(".text a")[0].innerText;
+				var textLnkAttributeValue  = $(this).closest(".search-box").find(".text a").length > 0 ? $(this).closest(".search-box").find(".text a")[0].attributes[2].nodeValue : false;
+				var linkValue =  function () {
+						if (textLnkAttributeValue) {
+								return textLnkAttributeValue;
+						} else {
+							return "#";
+						};
+				};		
+				var linkText = {
+					text: $(this).closest(".search-box")[0].childNodes[3].children[0].innerText,
+					link: linkValue()
+					};
 				if (!$(e.target).is(".poista")) {
 					if (numberOfFieldsSelected <= 2) {
 						$(this).addClass("poista");

@@ -902,6 +902,80 @@
 					isClosed = true;
 				}
 			}
+
+			function checkCompareLayer(blockContent, blockId) {
+				var compareFieldsSelected = $(".search-box .poista").length > 0 ? true : false;
+				var numberOfFieldsSelected = $(".search-box .poista").length;
+				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
+				var boxAlreadyExist = $("#box-" + blockId + "").length > 0 ? true : false;
+				if (compareFieldsSelected) {
+					if (numberOfFieldsSelected <= 3) {
+						if (!isCompareLayerOpen) {
+							$("#compare-row").removeClass("hidden");
+							if (!boxAlreadyExist) {
+								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
+									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="'+blockContent.link+'" class="title" >' +
+									blockContent.text + '</a> <a href="'+blockContent.link+'" class="button">Tutustu</a> </div>');
+							} else {
+								$("#box-" + blockId + "").remove();
+							}
+						}
+					}
+				} else {
+					$("#compare-row").addClass("hidden");
+					$("#compared-subjects").html("");
+					$("#compare-row").removeClass("closed");
+					$(".toggle-compare").removeClass("closed");
+				}
+			}
+			var compareButton = $(".search-results");
+			compareButton.on("click", ".compare-button span", function (e) {
+				var buttonIndex = $(this).closest(".search-box").index(".search-box ");
+				var numberOfFieldsSelected = $(".search-box .poista").length;
+				var textLnkAttributeValue  = $(this).closest(".search-box").find(".text a").length > 0 ? $(this).closest(".search-box").find(".text a")[0].attributes[2].nodeValue : false;
+				var linkValue =  function () {
+						if (textLnkAttributeValue) {
+								return textLnkAttributeValue;
+						} else {
+							return "#";
+						};
+				};		
+				var linkText = {
+					text: $(this).closest(".search-box")[0].childNodes[3].children[0].innerText,
+					link: linkValue()
+					};
+				if (!$(e.target).is(".poista")) {
+					if (numberOfFieldsSelected <= 2) {
+						$(this).addClass("poista");
+						checkCompareLayer(linkText, buttonIndex);
+					} else {
+						$("#alertModal").modal("show");
+					}
+				} else {
+					$(this).removeClass("poista");
+					$(".box-" + buttonIndex + "").remove();
+					checkCompareLayer(linkText, buttonIndex);
+				}
+			});
+			$(".clear-compare").on("click", function () {
+				$(".compare-button span").removeClass("poista");
+				checkCompareLayer("", "");
+			});
+			$("#compare-row").on("click", ".compare-box .close", function () {
+				var boxId = parseInt($(this).parents(".compare-box").attr("id").split("-")[1]);
+				var compareBox = $(".compare-box").length;
+				$(".search-box:eq(" + boxId + ") .compare-button span").removeClass("poista");
+				$("#box-" + boxId + "").css("display", "none");
+				$("#box-" + boxId + ".compare-box").remove();
+				if (compareBox === 1) {
+					$("#compare-row").addClass("hidden");
+					$("#compared-subjects").html("");
+				}
+			});
+			$(".toggle-compare").on("click", function () {
+				$(this).toggleClass("closed");
+				$("#compare-row").toggleClass("closed");
+			});
 			jQuery('[data-toggle="offcanvas"]').click(function () {
 				jQuery("#wrapper").toggleClass("toggled");
 			});
@@ -909,7 +983,6 @@
 				jQuery(this).toggleClass("fa-heart-o fa-heart");
 			});
 			jQuery("[data-target='#koulutusModal']").on("click", function () {
-				
 				var data = jQuery(this).attr("koulutus-data").replace(/\s/g, '').split("|"),
 					link= jQuery(this).attr("lnk"),
 					schoolName = jQuery(this).attr("nimi-data"),
