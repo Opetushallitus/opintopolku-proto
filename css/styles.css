@@ -617,16 +617,16 @@ ul.accordion {
   content: "\f107";
   font-family: "FontAwesome";
   position: relative;
-  left: 28px;
-  top: .5em;
+  left: 29px;
+  top: .45em;
   font-size: 1.4em;
 }
 .panel-blue a i::after {
   content: "\f106";
   font-family: "FontAwesome";
   position: relative;
-  left: 28px;
-  top: 9px;
+  left: 29px;
+  top: .35em;
   font-size: 1.4em;;
 }
 .panel-blue .panel-collapse {
