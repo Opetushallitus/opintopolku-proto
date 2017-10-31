@@ -685,27 +685,35 @@ ul.disc-list {
 .vertical-line {
   display: inline;
   position: relative;
-  padding: 22em 0;
+  padding: 18em 0;
   width: 0;
   border: 1px solid #00516c;
-  top: 28em;
+  top: 24em;
   left: 50%;
 }
-.info-page.tutkinnonosat .right-column ul {
+.info-page.tutkinnonosat .right-column .bullets ul {
   padding: 3% 6%;
+  position: relative;
+  right: 7%;
 }
 .info-page.tutkinnonosat .right-column ul li a {
   color: #ffffff;
   border-radius: 10px;
   display: block;
   background: #2c97df;
-  padding: 20px;
+  padding: 14px;
+  text-align: center;
   font-weight: bold;
+  word-wrap: break-word;
 }
+.info-page.tutkinnonosat .right-column ul li:first-child a {
+  width: 95%;
+  float: right;
+} 
 .info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
   width: 80%;
   float: right;
-  margin: 30px 0 0;
+  margin: 25px 0 0;
 }
 .info-page.tutkinnonosat .right-column ul li:nth-child(1) a {
   background: #00516c;
@@ -2028,6 +2036,33 @@ p.just-info {
   .haut {
     width: 30%;
   }
+  .vertical-line {
+    padding: 22em 0;
+  }
+  .info-page.tutkinnonosat .right-column .bullets ul {
+    padding: 0;
+    right: 3%;
+  }
+  .info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
+    width: 85%;
+  }
+}
+@media (max-width: 991px) {
+.vertical-line {
+    top: 24em;
+    left: 56%;
+}
+.info-page.tutkinnonosat .right-column .bullets ul {
+  padding: 3% 6%;
+  position: relative;
+  right: 14%;
+}
+.info-page.tutkinnonosat .right-column ul li:first-child a {
+  width: 70%;
+}
+.info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
+  width: 53%;
+}
 }
 @media (max-width: 768px) {
   #collapseOne .date::after {
@@ -2286,6 +2321,20 @@ button.toggle-compare {
   font-size: 1.4em;
 }
 }
+@media (max-width: 577px) {
+  .vertical-line {
+    top: 23em;
+  }
+  .info-page.tutkinnonosat .right-column .bullets ul {
+    padding: 0;
+  }
+  .info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
+    width: 59%;
+}
+.info-page.tutkinnonosat .right-column ul li:first-child a {
+  width: 79%;
+}
+}
 @media (max-width: 531px) {
   .toteutus .header span:not(.light-font) {
     margin: 0em 2em;
@@ -2303,6 +2352,16 @@ button.toggle-compare {
 @media (max-width: 481px) {
   .toteutus .header span:not(.light-font) {
     margin: 0em 2em;
+  }
+  .vertical-line {
+    top: 23em;
+    left: 50%;
+  }
+  .info-page.tutkinnonosat .right-column ul li:first-child a {
+    width: 85%;
+  }
+  .info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
+    width: 69%;
   }
 }
 @media (max-width: 425px) {
