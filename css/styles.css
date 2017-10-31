@@ -483,6 +483,250 @@ button.navbar-toggle.collapsed:hover .icon-bar:nth-child(3){
   width: 85%;
   margin: 0 1%; 
 }
+.info-page .panel-title a {
+  width: 100%;
+  display: inline-block;
+}
+.info-page .panel-title a::after {
+  content: "\f106";
+  font-family: "FontAwesome";
+  color: #000000;
+}
+.info-page .panel-title a.collapsed::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: #000000;
+}
+.info-page .panel-heading {
+  border-bottom: 1px solid #979797;
+  background-color: transparent;
+  padding: 10px 0;
+}
+.info-page .panel-heading h4 {
+  font-size: 1.35em;
+}
+ul.accordion {
+  padding: 0;
+}
+.info-page .panel-heading a:hover,
+.info-page .panel-heading a:visited,
+.info-page .panel-heading a:focus {
+  text-decoration: none;
+}
+.info-page .panel-body {
+  color: #000000;
+}
+.panel-group .panel{
+	border-radius: 0;
+}
+.panel-default {
+	border: 0;
+	color: #ffffff;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top: 0;
+}
+.panel-group.home #headingOne, 
+.panel-group.home #collapseOne .panel-body  {
+  background-color: #00be9c;
+  padding: 3%;
+}
+.panel-group.home #headingTwo, 
+.panel-group.home #collapseTwo .panel-body  {
+  background-color: #53d78b;
+  padding: 3%;
+}
+.panel-group.home #headingThree, 
+.panel-group.home #collapseThree .panel-body {
+  background-color: #2c97df;
+  padding: 3%;
+}
+.panel-heading {
+  border-radius: 0;
+}
+.home .panel-title a {
+	color: #ffffff;
+}
+.home .panel-title a:hover,
+.home .panel-title a:focus,
+.home .panel-title a:visited {
+  text-decoration: none;
+}
+.panel-group .panel+.panel {
+	margin-top: 0;
+}
+.home .panel-title a.collapsed::before {
+  content: "\f067";
+  font-weight: 100; 
+	font-family: "FontAwesome";
+	color: #ffffff;
+}
+.home .panel-title a::before {
+	content: "\f068";
+	font-family: "FontAwesome";
+	color: #ffffff;
+}
+.info-page .panel-body p {
+  font-size: 1.2em;
+}
+.panel-body .info {
+  max-height: 300px;
+  height: 100%; 
+}
+.panel-blue .panel-heading {
+  background: #2c97df;
+  color: #ffffff;
+  padding: 15px 0;
+  border-bottom: 0;
+}
+.panel-blue .panel-title a{
+  color: #ffffff;
+}
+.panel-blue .panel-heading h4 {
+  font-size: 1.35em;
+  padding: 15px;
+}
+.panel.panel-default.panel-blue {
+  margin-top: 30px;
+}
+.panel-blue .panel-heading {
+  padding: 0;
+}
+.panel-blue .panel-body {
+  padding: 0;
+}
+.panel-blue i {
+  float: right;
+}
+.panel-blue .panel-title span {
+  padding-top: 15px;
+  display: block;
+}
+.panel-blue .panel-title a {
+  display: block;
+}
+.panel-blue .panel-title a.collapsed::after, 
+.panel-blue .panel-title a::after {
+  content: "";
+}
+.panel-blue i::before {
+  font-size: 2.5em;
+  float: right;
+}
+.panel-blue a.collapsed i::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  position: relative;
+  left: 28px;
+  top: .5em;
+  font-size: 1.4em;
+}
+.panel-blue a i::after {
+  content: "\f106";
+  font-family: "FontAwesome";
+  position: relative;
+  left: 28px;
+  top: 9px;
+  font-size: 1.4em;;
+}
+.panel-blue .panel-collapse {
+  border: 1px solid #2c97df;
+  border-top: transparent;
+}
+.panel-blue .panel-section {
+  background-color: #ecf3fd;
+}
+.panel-blue .panel-section ul,
+ul.disc-list {
+  list-style-type: disc; 
+}
+.panel-blue .panel-content-title {
+  padding: 15px;
+}
+.panel-blue .panel-section-title h3 {
+  font-size: 1.1em;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+.panel-blue .panel-section-content {
+  padding:15px;
+}
+.info-page {
+  overflow: hidden;
+}
+.info-page .left-column h1 i {
+  color: #7ed222;
+  position: relative;
+  top: 10px;
+} 
+.info-page.tutkinnonosat .left-column h1 i {
+  color: #f5a623;
+}  
+.info-page .left-column h1 i::before {
+  font-size: 2.65em;
+}
+.info-page .left-column h1 i::after {
+  font-family: "FontAwesome";
+  content: "\f19d";
+  color: #ffffff;
+  position: absolute;
+  left: 7px;
+  font-size: 1.44em;
+  top: 15px;
+}
+.info-page.tutkinnonosat .left-column h1 i::after {
+  content: "\f233";
+  left: 12px;
+  top: 15px;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.vertical-line {
+  display: inline;
+  position: relative;
+  padding: 22em 0;
+  width: 0;
+  border: 1px solid #00516c;
+  top: 28em;
+  left: 50%;
+}
+.info-page.tutkinnonosat .right-column ul {
+  padding: 3% 6%;
+}
+.info-page.tutkinnonosat .right-column ul li a {
+  color: #ffffff;
+  border-radius: 10px;
+  display: block;
+  background: #2c97df;
+  padding: 20px;
+  font-weight: bold;
+}
+.info-page.tutkinnonosat .right-column ul li:not(:first-child) a {
+  width: 80%;
+  float: right;
+  margin: 30px 0 0;
+}
+.info-page.tutkinnonosat .right-column ul li:nth-child(1) a {
+  background: #00516c;
+}
+.info-page.tutkinnonosat .right-column ul li.actual-page a {
+  background: #f5a623;
+}
+.info-page.oppilaitos .left-column h1 i {
+  color: #0a2f87;
+  position: relative;
+  top: 10px;
+} 
+.info-page.oppilaitos .left-column h1 i::after {
+  font-family: "FontAwesome";
+  content: "\f1ad";
+  color: #ffffff;
+  position: absolute;
+  left: 15px;
+  font-size: 1.44em;
+  top: 16px;
+}
 .filter-options .action-buttons a {
   display: block;
   text-align: center;
@@ -745,56 +989,7 @@ footer p {
 .social-media i {
   font-size: 1.7em;
 }
-.panel-group .panel{
-	border-radius: 0;
-}
-.panel-default {
-	border: 0;
-	color: #ffffff;
-}
-.panel-group .panel-heading+.panel-collapse>.panel-body {
-	border-top: 0;
-}
-.panel-group.home #headingOne, 
-.panel-group.home #collapseOne .panel-body  {
-  background-color: #00be9c;
-  padding: 3%;
-}
-.panel-group.home #headingTwo, 
-.panel-group.home #collapseTwo .panel-body  {
-  background-color: #53d78b;
-  padding: 3%;
-}
-.panel-group.home #headingThree, 
-.panel-group.home #collapseThree .panel-body {
-  background-color: #2c97df;
-  padding: 3%;
-}
-.panel-heading {
-  border-radius: 0;
-}
-.home .panel-title a {
-	color: #ffffff;
-}
-.home .panel-title a:hover,
-.home .panel-title a:focus,
-.home .panel-title a:visited {
-  text-decoration: none;
-}
-.panel-group .panel+.panel {
-	margin-top: 0;
-}
-.home .panel-title a.collapsed::before {
-  content: "\f067";
-  font-weight: 100; 
-	font-family: "FontAwesome";
-	color: #ffffff;
-}
-.home .panel-title a::before {
-	content: "\f068";
-	font-family: "FontAwesome";
-	color: #ffffff;
-}
+
 .container-fluid .col-xs-12 {
 	padding-right: 0;
 	padding-left: 0; 
@@ -1055,6 +1250,9 @@ footer p {
   color: #ffffff;
   transition: all ease-in .5s;
 }
+#koulutusModal .course-info {
+  word-wrap: break-word;
+}
 .filter-container {
     position: absolute;
     left: -100.8vw;
@@ -1198,31 +1396,6 @@ span.cr.ch-5 {
   width: 100%;
   z-index: 1;
 }
-.info-page .panel-title a {
-  width: 100%;
-  display: inline-block;
-}
-.info-page .panel-title a::after {
-  content: "\f106";
-  font-family: "FontAwesome";
-  color: #000000;
-}
-.info-page .panel-title a.collapsed::after {
-  content: "\f107";
-  font-family: "FontAwesome";
-  color: #000000;
-}
-.info-page .panel-heading {
-  border-bottom: 1px solid #979797;
-  background-color: transparent;
-  padding: 10px 0;
-}
-.info-page .panel-heading h4 {
-  font-size: 1.35em;
-}
-ul.accordion {
-  padding: 0;
-}
 
 .osaamisalat {
   font-weight:bold;
@@ -1241,14 +1414,7 @@ ul.accordion {
   margin-left: 10px;
   font-family: "FontAwesome";
 }
-.info-page .panel-heading a:hover,
-.info-page .panel-heading a:visited,
-.info-page .panel-heading a:focus {
-  text-decoration: none;
-}
-.info-page .panel-body {
-  color: #000000;
-}
+
 ul.tutkinnon-osat {
   padding: 0;
   font-size: 1.2em;
@@ -1315,12 +1481,7 @@ p.student-comment {
 .modal-body {
   padding: 0 30px 15px;
 }
-.info-page {
-  overflow: hidden;
-}
-.info-page .panel-body p {
-  font-size: 1.2em;
-}
+
 .modal .close {
   font-family: cursive;
   color: #ffffff;
@@ -1414,37 +1575,6 @@ p.student-comment {
   width: 100%;
   margin: 0 auto;
 }
-.info-page .left-column h1 i {
-  color: #7ed222;
-  position: relative;
-  top: 10px;
-}  
-.info-page .left-column h1 i::before {
-  font-size: 2.65em;
-}
-.info-page .left-column h1 i::after {
-  font-family: "FontAwesome";
-  content: "\f19d";
-  color: #ffffff;
-  position: absolute;
-  left: 7px;
-  font-size: 1.44em;
-  top: 15px;
-}
-.info-page.oppilaitos .left-column h1 i {
-  color: #0a2f87;
-  position: relative;
-  top: 10px;
-} 
-.info-page.oppilaitos .left-column h1 i::after {
-  font-family: "FontAwesome";
-  content: "\f1ad";
-  color: #ffffff;
-  position: absolute;
-  left: 15px;
-  font-size: 1.44em;
-  top: 16px;
-} 
 .carousel-control i {
   top: 50%;
   position: relative;
@@ -1522,10 +1652,6 @@ hr {
 }
 .toteutus-blue .header i {
   float: right;
-}
-.panel-body .info {
-  max-height: 300px;
-  height: 100%; 
 }
 p.btn-education {
   text-align: center;
@@ -1771,6 +1897,7 @@ button.toggle-compare.closed::after {
   height: auto;
   padding: 5px 0;
   bottom: 0;
+  z-index: 999;
   background: #159ecc;
 }
 .app-navigation-bar a {
@@ -1919,6 +2046,9 @@ p.just-info {
   .panel .content {
     height: 20px;
   }
+  .info-page .panel-heading h4 {
+    font-size: .85em;
+  }
   ul.tutkinnon-osat {
     font-size: 1em;
   }
@@ -1927,9 +2057,6 @@ p.just-info {
   }
   ul.right-links li a {
     max-width: 100%;
-  }
-  .info-page .panel-heading h4 {
-    font-size: .93em;
   }
   .info-page .left-column h1 i {
     top: 0;
@@ -1972,7 +2099,11 @@ p.just-info {
   .filter-button {
     padding: 1%;
     width: 165px;
-    height: 40px
+    height: 40px;
+    z-index: 998;
+  }
+  .filter-button.sulje {
+    z-index: 998;
   }
   .panel-body .info {
     max-height: fit-content;
@@ -2036,6 +2167,9 @@ p.just-info {
 .panel-body .date {
   font-size: 3.6em;
 }
+.info-page .panel-body p {
+  font-size: 1em;
+}
 footer p {
   font-size: 1em;
   padding: 4% 11%;
@@ -2053,6 +2187,10 @@ h1 {
   width: fit-content;
   margin: 0 auto;
 }
+.info-page.tutkinnonosat .left-column h1 i::after {
+  left: 10px;
+  top: 12px;
+}
 .info-page.oppilaitos .left-column h1 i::after {
   left: 13px;
   top:13px;
@@ -2064,9 +2202,6 @@ h1 {
 }
 .info-page .left-column h1 i::after {
   left: 5px;
-}
-.info-page .panel-body p {
-  font-size: 1em;
 }
 .oppilaitos .right-column {
   height: auto;
@@ -2107,11 +2242,15 @@ button.toggle-compare {
 }
 .filter-container.open {
   position: fixed;
-  z-index: 100;
+  z-index: 995;
+}
+.filter-options {
+  z-index: 995;
 }
 .app-navigation-bar {
   margin-top: 0;
   padding: 1px 0;
+  z-index: 994;
 }
 .app-navigation-bar .fa-circle-thin:before {
   font-size: 2.95em;
@@ -2134,6 +2273,32 @@ button.toggle-compare {
 .courses h1 {
   color: #898989;
 }
+.panel-blue .panel-title span {
+  padding-top: 0;
+}
+.panel-blue a.collapsed i::after {
+  left: 26px;
+  top: 9px;
+}
+.panel-blue a i::after {
+  left: 26px;
+  top: 7px;
+  font-size: 1.4em;
+}
+}
+@media (max-width: 531px) {
+  .toteutus .header span:not(.light-font) {
+    margin: 0em 2em;
+  }
+  .panel-blue a.collapsed i::after {
+    left: 29%;
+    top: -31px;
+  }
+  .panel-blue a i::after {
+    left: 26px;
+    top: -33px;
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 481px) {
   .toteutus .header span:not(.light-font) {
