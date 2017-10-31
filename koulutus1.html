@@ -1064,16 +1064,21 @@
 					isClosed = true;
 				}
 			}
-
 			function checkCompareLayer(blockContent, blockId) {
 				var compareFieldsSelected = $(".search-box .poista").length > 0 ? true : false;
 				var numberOfFieldsSelected = $(".search-box .poista").length;
 				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
 				var boxAlreadyExist = $("#box-" + blockId + "").length > 0 ? true : false;
 				if (compareFieldsSelected) {
+					
 					if (numberOfFieldsSelected <= 3) {
 						if (!isCompareLayerOpen) {
 							$("#compare-row").removeClass("hidden");
+							if (numberOfFieldsSelected == 1) {
+								$("#compare-row .pull-right .btn").addClass("disabled");
+							} else {
+								$("#compare-row .pull-right .btn").removeClass("disabled");
+							}
 							if (!boxAlreadyExist) {
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
 									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="'+blockContent.link+'" class="title" >' +
@@ -1129,6 +1134,10 @@
 				$(".search-box:eq(" + boxId + ") .compare-button span").removeClass("poista");
 				$("#box-" + boxId + "").css("display", "none");
 				$("#box-" + boxId + ".compare-box").remove();
+				console.log(compareBox);
+				if (compareBox === 2) {
+					$("#compare-row .pull-right .btn").addClass("disabled");
+				}
 				if (compareBox === 1) {
 					$("#compare-row").addClass("hidden");
 					$("#compared-subjects").html("");
