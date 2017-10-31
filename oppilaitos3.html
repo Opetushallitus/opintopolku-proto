@@ -664,7 +664,7 @@
 				var buttonIndex = $(this).closest(".search-box").index(".search-box ");
 				var numberOfFieldsSelected = $(".search-box .poista").length;
 				var text = $(this).closest(".search-box").find(".text a")[0];
-				var textLnkAttributeValue  = $(this).closest(".search-box").find(".text a").length > 0 ? $(this).closest(".search-box").find(".text a")[0].attributes[2].nodeValue : false;
+				var textLnkAttributeValue  = $(this).closest(".search-box").find(".text a").length > 0 ? $(this).closest(".search-box").find(".text a:eq(0)").attr("href") : false;
 				var linkValue =  function () {
 						if (textLnkAttributeValue) {
 								return textLnkAttributeValue;
@@ -712,7 +712,7 @@
 					boxIndex = $(this).parent().index(".text");
 				jQuery(".modal .course-info").text("");
 				data.forEach(function (element) {
-					jQuery(".modal .course-info").append("<div class=\"col-md-3 col-xs-5 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-9 col-xs-7\">" + element.split(":")[1] + "</div>");
+					jQuery(".modal .course-info").append("<div class=\"col-md-3 col-xs-6 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-9 col-xs-6\">" + element.split(":")[1] + "</div>");
 				});
 				jQuery("#koulutusModal .school-link").text(schoolName);
 				jQuery("#koulutusModal .school-intro").text(schoolIntro);
@@ -736,17 +736,6 @@
 				 		jQuery(".suosikkit i").on("click", function(){
 						 jQuery(this).toggleClass( "fa-heart-o fa-heart");
 						});
-
-					 jQuery("[data-target='#koulutusModal']").on("click", function () {
-						var data = jQuery(this).attr("koulutus-data").replace(/\s/g,'').split("|");
-						jQuery(".modal .course-info").text("");
-						data.forEach(function(element) {
-							jQuery(".modal .course-info").append("<div class=\"col-md-2 col-xs-4 education-info\">" + element.split(":")[0] + ": </div> <div class=\"col-md-10 col-xs-8\">" + element.split(":")[1] + "</div>");
-						});
-						 var schoolName = jQuery(this).attr("nimi-data");
-						 jQuery(".modal .school-link").text(schoolName);
-						 jQuery("#koulutusModal").modal("show");
-					 });
 					 if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
 				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
 			}
