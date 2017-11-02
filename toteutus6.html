@@ -156,7 +156,7 @@
 									 <div class="wrapper"><input type="text" class="nabvar-search oph-input" placeholder="Etsi..."></div>
 						 </div>
 					 </div>
-					 <div class="container-fluid" id="call-to-action">
+					 <div class="container-fluid" id="call-to-action-secondary">
 							 <div class="jumbotron">
 								 <div class="container">
 										 <div class="row">
@@ -329,7 +329,7 @@
 							 <div class="container oppilaitos">
 									<div class="row info-page">
 											<div class="col-xs-12 col-md-9 left-column toteutus">
-													<h1><a class="header" href="javascript:history.go(-1)"><span class="light-font">WinNova, Pori</span> <span>Tieto- ja viestintätekniikan perustutkinto</span> </a></h1>
+													<h1><a class="header" href="koulutus1.html"><span class="light-font">WinNova, Pori</span> <span>Tieto- ja viestintätekniikan perustutkinto</span> </a></h1>
 											<div class="row panel-body">
 											<div class="col-xs-12 col-md-6 toteutus-blue">
 												<div class="row"> 
@@ -376,7 +376,7 @@
 																<div class="panel panel-default">
 																	<div class="panel-heading" role="tab" id="headingOne">
 																	<h4 class="panel-title">
-																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+																		<a class="collapsed" role="button" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
 																		Koulutuksen tavoitteet
 																		</a>
 																	</h4>
@@ -390,7 +390,7 @@
 																<div class="panel panel-default">
 																	<div class="panel-heading" role="tab" id="headingTwo">
 																	<h4 class="panel-title">
-																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+																		<a class="collapsed" role="button" data-toggle="collapse"  href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 																		Valintaperusteet
 																		</a>
 																	</h4>
@@ -404,7 +404,7 @@
 																<div class="panel panel-default">
 																	<div class="panel-heading" role="tab" id="headingThree">
 																	<h4 class="panel-title">
-																		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+																		<a class="collapsed" role="button" data-toggle="collapse"  href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 																		Hakukelpoisuusvaatimukset
 																		</a>
 																	</h4>
@@ -418,7 +418,7 @@
 																<div class="panel panel-default">
 																		<div class="panel-heading" role="tab" id="headingFour">
 																		<h4 class="panel-title">
-																			<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+																			<a class="collapsed" role="button" data-toggle="collapse"  href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
 																				Jatko-opintomahdollisuudet
 																			</a>
 																		</h4>
@@ -574,7 +574,7 @@
 						 jQuery("#koulutusModal").modal("show");
 					 });
 			if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
-				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action-secondary").outerHeight()));
 			}
 			$(".filter-button").on("click", function(){
 				$(this).toggleClass( "sulje");
@@ -584,7 +584,39 @@
 				}
 			});
 			$(window).on("resize", function() {
-				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action").outerHeight()));
+				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action-secondary").outerHeight()));
+			});
+			$(".app-navigation-bar .previous, .app-navigation-bar .next").on("click", function () {
+				var buttonPressed = $(this).attr("class").split(" ")[1];
+				if (sessionStorage.getItem("navigationBar") != null) {
+					var navigation = sessionStorage.getItem("navigationBar");
+					if (buttonPressed == "previous") {
+						if (navigation == 2) {
+							sessionStorage.setItem("navigationBar", "1");
+							window.location.href = "koulutus1.html";
+							return false;
+						} else {
+							return false;
+						}
+					} else {
+						if (navigation == 1) {
+							sessionStorage.setItem("navigationBar", "2");
+							window.location.href = "koulutus2.html";
+							return false;
+
+						} else {
+							return false;
+						}
+					}
+				} else {
+					if (buttonPressed == "next") {
+						sessionStorage.setItem("navigationBar", "1");
+						window.location.href = "koulutus1.html";
+						return false;
+					} else {
+						return false;
+					}
+				}
 			});
 					
 				});

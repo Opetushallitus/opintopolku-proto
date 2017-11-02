@@ -154,7 +154,7 @@
 								   <div class="wrapper"><input type="text" class="nabvar-search oph-input" placeholder="Etsi..."></div>
 					   </div>
 				   </div>
-				   <div class="container-fluid" id="call-to-action">
+				   <div class="container-fluid" id="call-to-action-secondary">
 						   <div class="jumbotron">
 							   <div class="container">
 									   <div class="row">
@@ -654,7 +654,7 @@
 				   $(this).toggleClass( "fa-heart-o fa-heart");
 			   });
 			   if($(".filter-options").outerHeight() >= $(window).innerHeight()) {
-				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action").outerHeight()));
+				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $("#call-to-action-secondary").outerHeight()));
 			   }
 			   $(".filter-button").on("click", function(){
 				   $(this).toggleClass( "sulje");
@@ -664,7 +664,7 @@
 				   }
 			   });
 			   $(window).on("resize", function() {
-				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action").outerHeight()));
+				   $(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight()+$("#call-to-action-secondary").outerHeight()));
 			   });
 			   
 		   });

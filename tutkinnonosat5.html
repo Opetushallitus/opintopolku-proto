@@ -321,7 +321,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid" id="call-to-action">
+			<div class="container-fluid" id="call-to-action-secondary">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
@@ -549,7 +549,7 @@
 									<div class="panel panel-default panel-blue">
 										<div class="panel-heading" role="tab" id="headingOne">
 											<h4 class="panel-title">
-													<a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													<a role="button" class="collapsed" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 												<div class="row">
 													<div class="col-xs-10">
 															<span>Tutkinnon suorittaja osaa arvioida asiakkaan tarpeita.</span>
@@ -585,7 +585,7 @@
 									<div class="panel panel-default panel-blue">
 										<div class="panel-heading" role="tab" id="headingTwo">
 												<h4 class="panel-title">
-														<a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+														<a role="button" class="collapsed" data-toggle="collapse"  href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
 													<div class="row">
 														<div class="col-xs-10">
 																<span>Tutkinnon suorittaja osaa asentaa lähiverkon.</span>
@@ -621,7 +621,7 @@
 									<div class="panel panel-default panel-blue">
 										<div class="panel-heading" role="tab" id="headingThree">
 												<h4 class="panel-title">
-														<a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+														<a role="button" class="collapsed" data-toggle="collapse"  href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
 													<div class="row">
 														<div class="col-xs-10">
 																<span>Tutkinnon suorittaja osaa ylläpitää lähiverkkoa.</span>
@@ -657,7 +657,7 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingSix">
 											<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+												<a class="collapsed" role="button" data-toggle="collapse"  href="#collapseSix" aria-expanded="false"
 												    aria-controls="collapseSix">
 													Ammattitaidon osoittamistavat
 												</a>
@@ -684,7 +684,7 @@
 									<div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingSeven">
 										<h4 class="panel-title">
-											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+											<a role="button" data-toggle="collapse"  href="#collapseSeven" aria-expanded="false"
 												aria-controls="collapseSeven">
 												Oppilaitokset
 											</a>
@@ -815,7 +815,6 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="vertical-line"> </div>
 							<div class="col-md-12 bullets">
 								<ul>
 									<li> <a href="koulutus1.html">Tieto- ja viestintätekniikan ammattitutkinto</a></li>
@@ -983,7 +982,7 @@
 						if (textLnkAttributeValue) {
 								return textLnkAttributeValue;
 						} else {
-							return "#";
+							return "compare.html";
 						};
 				};		
 				var linkText = {
@@ -1054,18 +1053,9 @@
 				compareButton.trigger(event);
 				jQuery("#koulutusModal").modal("hide");
 			});
-			$(".panel-heading").on("click", function(){
-				setTimeout(function(){
-					if($("#accordion a.collapsed").length == 5) {
-						$("#collapseFour").addClass("in");
-						$("#collapseFour").css("height", "auto");
-						$("#headingFour a:eq(0)").removeClass("collapsed");
-					}
-				}, 10);
-			});
 			if ($(".filter-options").outerHeight() >= $(window).innerHeight()) {
 				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $(
-					"#call-to-action").outerHeight()));
+					"#call-to-action-secondary").outerHeight()));
 			}
 			$(".filter-button").on("click", function () {
 				$(this).toggleClass("sulje");
@@ -1087,7 +1077,7 @@
 			});
 			$(window).on("resize", function () {
 				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $(
-					"#call-to-action").outerHeight()));
+					"#call-to-action-secondary").outerHeight()));
 			});
 		});
 	</script>
