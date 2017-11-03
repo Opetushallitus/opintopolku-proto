@@ -799,9 +799,9 @@
 						if (!isCompareLayerOpen) {
 							$("#compare-row").removeClass("hidden");
 							if (numberOfFieldsSelected == 1) {
-								$("#compare-row .pull-right .btn").addClass("hidden");
+								$("#compare-row .pull-right .btn").addClass("disabled");
 							} else {
-								$("#compare-row .pull-right .btn").removeClass("hidden");
+								$("#compare-row .pull-right .btn").removeClass("disabled");
 							}
 							if (!boxAlreadyExist) {
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
