@@ -1301,6 +1301,8 @@
 					"#call-to-action-secondary").outerHeight()));
 			}
 			$(".filter-button").on("click", function () {
+				var body = $("html, body");
+				body.stop().animate({scrollTop:0}, 500, "swing");
 				$(this).toggleClass("sulje");
 				$(".filter-container").toggleClass("open");
 				if ($(window).innerWidth() <= 768) {

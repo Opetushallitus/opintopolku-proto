@@ -867,11 +867,14 @@
 			$(".suosikkit i").on("click", function () {
 				$(this).toggleClass("fa-heart-o fa-heart");
 			});
-			if ($(".filter-options").outerHeight() >= $(window).innerHeight()) {
-				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $(
-					"#call-to-action-secondary").outerHeight()));
+			if ($(window).innerWidth() < 1024 || $(document).innerHeight() <= $(".filter-options").outerHeight()) {
+				if($(document).innerHeight() >= $(".filter-options").outerHeight()) {
+					$(".filter-options").css("height", $(window).innerHeight() - $(".jumbotron").outerHeight());
+				}	
 			}
 			$(".filter-button").on("click", function () {
+				var body = $("html, body");
+				body.stop().animate({scrollTop:0}, 500, "swing");
 				$(this).toggleClass("sulje");
 				$(".filter-container").toggleClass("open");
 				if ($(window).innerWidth() <= 768) {

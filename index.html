@@ -755,7 +755,7 @@
 										<li>
 											<i class="fa fa-instagram" aria-hidden="true"></i>
 										</li>
-									</ul>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -795,10 +795,14 @@
 			$('[data-toggle="offcanvas"]').click(function () {
 				$('#wrapper').toggleClass('toggled');
 			});
-			if ($(".filter-options").outerHeight() >= ($(window).innerHeight() + 5)) {
-				$(".filter-options").css("height", $(window).innerHeight() - $(".header-search").outerHeight());
+			if ($(window).innerWidth() < 1024 || $(document).innerHeight() <= $(".filter-options").outerHeight()) {
+				if($(document).innerHeight() >= $(".filter-options").outerHeight()) {
+					$(".filter-options").css("height", $(window).innerHeight() - $(".jumbotron").outerHeight());
+				}	
 			}
 			$(".filter-button").on("click", function () {
+				var body = $("html, body");
+				body.stop().animate({scrollTop:0}, 500, "swing");
 				$(this).toggleClass("sulje");
 				$(".filter-container").toggleClass("open");
 				if ($(window).innerWidth() <= 768) {
@@ -807,7 +811,7 @@
 			});
 			$(window).on("resize", function () {
 				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $(
-					"#call-to-action").outerHeight()));
+					"#call-to-action-secondary").outerHeight()));
 			});
 		});
 	</script>
