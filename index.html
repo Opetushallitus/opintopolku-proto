@@ -797,7 +797,7 @@
 			});
 			if ($(window).innerWidth() < 1024 || $(document).innerHeight() <= $(".filter-options").outerHeight()) {
 				if($(document).innerHeight() >= $(".filter-options").outerHeight()) {
-					$(".filter-options").css("height", $(window).innerHeight() - $(".jumbotron").outerHeight());
+					$(".filter-options").css("height", $(window).innerHeight() - $(".header-search.main").outerHeight());
 				}	
 			}
 			$(".filter-button").on("click", function () {
@@ -810,8 +810,7 @@
 				}
 			});
 			$(window).on("resize", function () {
-				$(".filter-options").css("height", $(window).innerHeight() - ($(".container.navigation").outerHeight() + $(
-					"#call-to-action-secondary").outerHeight()));
+				$(".filter-options").css("height", ($(window).innerHeight() - $(".header-search.main").outerHeight()) + $(window).innerHeight()*4/100);
 			});
 		});
 	</script>
