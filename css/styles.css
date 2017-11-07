@@ -1098,6 +1098,7 @@ footer p {
 }
 .search-box {
     box-shadow: 0 0px 7px #6b6b6b;
+    height: 200px;
     overflow: hidden;
 }
 .text {
@@ -1942,10 +1943,18 @@ button.toggle-compare.closed::after {
   color: #ffffff;
 }
 .app-navigation-bar .fa-circle-thin:before {
-  font-size: 3.8em;
+  font-size: 3em;
 }
 .app-navigation-bar .previous {
   text-align: left;
+}
+.app-navigation-bar .previous i {
+  position: relative;
+  left: 1.5%;
+}
+.app-navigation-bar .next i {
+  position: relative;
+  right: 1%;
 }
 .app-navigation-bar .previous a::after {
   content: "Edellinen";
@@ -1954,20 +1963,20 @@ button.toggle-compare.closed::after {
   left: -5px;
 }
 .app-navigation-bar .previous i::after {
-font-family: "FontAwesome";
-content:"\f104";
-position: relative;
-font-size: 35px;
-left: -31px;
-top: -7px;
+  font-family: "FontAwesome";
+  content:"\f104";
+  position: relative;
+  font-size: 2.2em;
+  left: -26px;
+  top: -5px;
 }
 .app-navigation-bar .search i::after {
   font-family: "FontAwesome";
   content: "\f002";
   position: relative;
-  left: -33px;
-  top: -12px;
-  font-size: 21px;
+  left: -27px;
+  top: -9px;
+  font-size: 1.35em;
 }
 .app-navigation-bar .search {
   text-align: center;
@@ -1985,15 +1994,15 @@ top: -7px;
   content: "Seuraava";
   position: relative;
   display: block;
-  left: -4px; 
+  left: -4px;
 }
 .app-navigation-bar .next i::after {
  font-family: "FontAwesome";
  content:"\f105";
  position: relative;
- font-size: 35px;
- left: -27px;
- top: -7px;
+ font-size: 2.2em;
+ left: -22px;
+ top: -5px;
 }
 .toteutus .header span:not(.light-font) {
   color: #000000;
@@ -2403,6 +2412,18 @@ button.toggle-compare {
   left: 26px;
   top: 7px;
   font-size: 1.4em;
+}
+}
+@media (max-width: 768px) and (orientation: landscape) {
+.form-group {
+    margin-bottom: 15px;
+    width: 50%;
+    float: left;
+}
+.filters-main .form-group:nth-child(1),
+.filters-main .form-group:nth-last-child(1),
+.filters-main .form-group:nth-child(8) {
+  width: 100%;
 }
 }
 @media (max-width: 577px) {
