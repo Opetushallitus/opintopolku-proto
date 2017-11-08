@@ -1632,13 +1632,22 @@ p.student-comment {
   height: 100%;
   margin-top: 30px; 
 }
-.toteutus a.header:before {
+.toteutus a.header:before,
+.compare a.header:before {
   font-family: "FontAwesome";
   content: "\f190";
   font-size: 2em;
+  font-weight: 100;
   float: left;
   color: #000000;
   padding: 0 1.5% 0 0;
+}
+.row.compare {
+  margin-top: 30px;
+}
+.compare a.header:before {
+  position: relative;
+  top:-14px;
 }
 .left-column.toteutus h1 i{
   color: #000000;
