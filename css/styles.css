@@ -2129,7 +2129,7 @@ p.just-info {
 }
 .block-layer .header h3 {
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.45em;
 }
 .block-layer.tiedote .header,
 .block-layer.tiedote .inner {
@@ -2176,11 +2176,13 @@ p.just-info {
 .block-layer.content .block-image-background.some-bg {
   height: 80%;
 }
-a.titlelink,
-.titlelink h5 {
+a.titlelink {
   text-transform: none;
   line-height: 1.3;
   text-decoration: none;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1.15em;
 }
 @media (max-width: 1700px) {
   .filter-button {
