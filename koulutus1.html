@@ -525,7 +525,6 @@
 				</div>
 			</div>
 			<div class="container-fluid hidden" id="compare-row">
-				<button type="button" class="close toggle-compare" aria-label="Close"></button>
 				<div class="container">
 					<div class="row">
 						<div id="compared-subjects"></div>
@@ -781,7 +780,7 @@
 																									Opetustapa: Ohjattu opetus|
 																									Opiskelumuoto: Monimuoto|
 																									Pohjakoulutus: peruskoulu|
-																									Maksullinen: Maksuton																	
+																									Maksullinen: Maksuton
 																									" nimi-data="Raahen Porvari- Ja Kauppakoulurahasto Sr">Raahen Porvari- Ja Kauppakoulurahasto Sr</a>
 																									<p>Käytöntuen osaamisala</p>
 																	</div>
@@ -1091,7 +1090,6 @@
 				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
 				var boxAlreadyExist = $("#box-" + blockId + "").length > 0 ? true : false;
 				if (compareFieldsSelected) {
-
 					if (numberOfFieldsSelected <= 3) {
 						if (!isCompareLayerOpen) {
 							$("#compare-row").removeClass("hidden");
@@ -1101,10 +1099,13 @@
 								$("#compare-row .pull-right .btn").removeClass("disabled");
 							}
 							if (!boxAlreadyExist) {
+								if(numberOfFieldsSelected <= 1) {
+									$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compared-subjects-title">Olet valinnut vertailuun:</div>');
+								}
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
 									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="' +
-									blockContent.link + '" class="title" >' +
-									blockContent.text + '</a> <a href="' + blockContent.link + '" class="button">Tutustu</a> </div>');
+									blockContent.link + '" class="title" ><strong>' +
+									blockContent.text + ':</strong> <br> Tieto- ja viestintätekniikan perustutkinto</div>');
 							} else {
 								$("#box-" + blockId + "").remove();
 							}

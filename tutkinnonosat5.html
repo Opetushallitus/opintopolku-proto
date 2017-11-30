@@ -577,7 +577,7 @@
 																		<li class="criteria">arkistoi dokumentaation ylläpidon ja kehittämisen vaatimalla tavalla.</li>
 																	</ul>
 															</div>
-														</div>	
+														</div>
 												</div>
 											</div>
 										</div>
@@ -653,7 +653,7 @@
 											</div>
 										</div>
 									</div>
-								
+
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingSix">
 											<h4 class="panel-title">
@@ -666,7 +666,7 @@
 										<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
 											<div class="panel-body">
 												<p>Tutkinnon suorittaja osoittaa osaamisensa työtehtäviensä mukaisesti esimerkiksi seuraavasti:</p>
-													<ul class="disc-list">			
+													<ul class="disc-list">
 														<li>
 															Tutkinnon suorittaja hoitaa tietoverkkoon liittyviä tukitehtäviä oman vastuualueensa mukaisesti.
 														</li>
@@ -677,7 +677,7 @@
 															Tutkinnon suorittaja asentaa lähiverkon ja opastaa käyttäjiä sen käytössä.
 														</li>
 													</ul>
-												<p>Arvioijat seuraavat ja arvioivat hänen toimintaansa sekä antavat toiminnasta kirjallisen arvion. Tutkinnon suorittaja voi täydentää tutkintosuorituksiaan prosessin aikana itse tuottamillaan dokumenteilla, jotka arvioituina ovat osa hänen arviointiaineistoaan.</p>													
+												<p>Arvioijat seuraavat ja arvioivat hänen toimintaansa sekä antavat toiminnasta kirjallisen arvion. Tutkinnon suorittaja voi täydentää tutkintosuorituksiaan prosessin aikana itse tuottamillaan dokumenteilla, jotka arvioituina ovat osa hänen arviointiaineistoaan.</p>
 											</div>
 										</div>
 									</div>
@@ -785,14 +785,14 @@
 																</div>
 															</div>
 														</div>
-													</div>								
+													</div>
 										</div>
 									</div>
 								</div>
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 
 					<div class="col-xs-12 col-md-3 right-column row-eq-height">
@@ -936,7 +936,7 @@
 				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
 				var boxAlreadyExist = $("#box-" + blockId + "").length > 0 ? true : false;
 				if (compareFieldsSelected) {
-					
+
 					if (numberOfFieldsSelected <= 3) {
 						if (!isCompareLayerOpen) {
 							$("#compare-row").removeClass("hidden");
@@ -946,9 +946,13 @@
 								$("#compare-row .pull-right .btn").removeClass("disabled");
 							}
 							if (!boxAlreadyExist) {
+								if(numberOfFieldsSelected <= 1) {
+									$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compared-subjects-title">Olet valinnut vertailuun:</div>');
+								}
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
-									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="'+blockContent.link+'" class="title" >' +
-									blockContent.text + '</a> <a href="'+blockContent.link+'" class="button">Tutustu</a> </div>');
+									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="' +
+									blockContent.link + '" class="title" ><strong>' +
+									blockContent.text + ':</strong> <br> Tieto- ja viestintätekniikan perustutkinto</div>');
 							} else {
 								$("#box-" + blockId + "").remove();
 							}
@@ -972,7 +976,7 @@
 						} else {
 							return "compare.html";
 						};
-				};		
+				};
 				var linkText = {
 					text: $(this).closest(".search-box")[0].childNodes[3].children[0].innerText,
 					link: linkValue()

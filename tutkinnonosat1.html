@@ -552,7 +552,7 @@
 													<a role="button" class="collapsed" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 												<div class="row">
 													<div class="col-xs-10">
-														
+
 															<span>Tutkinnon suorittaja osaa toimia työyhteisön jäsenenä.</span>
 														</div>
 													<div class="col-xs-2"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
@@ -608,7 +608,7 @@
 																				<li class="criteria">kantaa vastuuta omasta työkyvystään, ergonomiasta sekä työ- ja vapaa-ajan tasapainosta.</li>
 																			</ul>
 																	</div>
-																</div>	
+																</div>
 												</div>
 											</div>
 										</div>
@@ -619,7 +619,7 @@
 														<a role="button" class="collapsed" data-toggle="collapse"  href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
 													<div class="row">
 														<div class="col-xs-10">
-															
+
 																<span>Tutkinnon suorittaja osaa toimia tieto- ja viestintätekniikka-alan työtehtävissä.</span>
 															</div>
 														<div class="col-xs-2"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
@@ -640,7 +640,7 @@
 																			</div>
 																			<ul>
 																				<li class="criteria">käyttää keskusteluissa luontevasti tieto- ja viestintätekniikan peruskäsitteitä</li>
-																				<li class="criteria">seuraa tieto- ja viestintätekniikka-alan muutoksia ja arvioi niiden vaikutuksia omaan työhönsä</li>																				
+																				<li class="criteria">seuraa tieto- ja viestintätekniikka-alan muutoksia ja arvioi niiden vaikutuksia omaan työhönsä</li>
 																			</ul>
 																	</div>
 																</div>
@@ -675,7 +675,7 @@
 										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 											<div class="panel-body">
 												<p>Tutkinnon suorittaja osoittaa osaamisensa työtehtäviensä mukaisesti esimerkiksi seuraavasti:</p>
-													<ul class="disc-list">			
+													<ul class="disc-list">
 														<li>
 															Tutkinnon suorittaja osoittaa hallitsevansa tieto- ja viestintätekniikka-alan toiminnan pääperiaatteet opastaessaan työtovereitaan organisaation toimintaan sekä täydentäessään tarvittaessa työtehtäviin yms. opastamiseen liittyvää aineistoa omalta asiantuntijuusalueeltaan. Hän voi myös esitellä organisaationsa toimintaa esim. yksikkö- tms. kokouksessa tai asiakastilaisuudessa.
 														</li>
@@ -683,7 +683,7 @@
 															Tutkinnon suorittaja arvioi ja perustelee omaa osaamistaan ja kehittymistään palkka- tai kehityskeskustelussa.
 														</li>
 													</ul>
-												<p>Arvioijat seuraavat ja arvioivat hänen toimintaansa sekä antavat toiminnasta kirjallisen arvion. Tutkinnon suorittaja voi täydentää tutkintosuorituksiaan prosessin aikana itse tuottamillaan dokumenteilla, jotka arvioituina ovat osa hänen arviointiaineistoaan.</p>													
+												<p>Arvioijat seuraavat ja arvioivat hänen toimintaansa sekä antavat toiminnasta kirjallisen arvion. Tutkinnon suorittaja voi täydentää tutkintosuorituksiaan prosessin aikana itse tuottamillaan dokumenteilla, jotka arvioituina ovat osa hänen arviointiaineistoaan.</p>
 											</div>
 										</div>
 									</div>
@@ -791,14 +791,14 @@
 																</div>
 															</div>
 														</div>
-													</div>								
+													</div>
 										</div>
 									</div>
 								</div>
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 
 					<div class="col-xs-12 col-md-3 right-column row-eq-height">
@@ -942,7 +942,7 @@
 				var isCompareLayerOpen = $("#compare-row .hidden").length > 0 ? true : false;
 				var boxAlreadyExist = $("#box-" + blockId + "").length > 0 ? true : false;
 				if (compareFieldsSelected) {
-					
+
 					if (numberOfFieldsSelected <= 3) {
 						if (!isCompareLayerOpen) {
 							$("#compare-row").removeClass("hidden");
@@ -952,9 +952,13 @@
 								$("#compare-row .pull-right .btn").removeClass("disabled");
 							}
 							if (!boxAlreadyExist) {
+								if(numberOfFieldsSelected <= 1) {
+									$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compared-subjects-title">Olet valinnut vertailuun:</div>');
+								}
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
-									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="'+blockContent.link+'" class="title" >' +
-									blockContent.text + '</a> <a href="'+blockContent.link+'" class="button">Tutustu</a> </div>');
+									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="' +
+									blockContent.link + '" class="title" ><strong>' +
+									blockContent.text + ':</strong> <br> Tieto- ja viestintätekniikan perustutkinto</div>');
 							} else {
 								$("#box-" + blockId + "").remove();
 							}
@@ -978,7 +982,7 @@
 						} else {
 							return "compare.html";
 						};
-				};		
+				};
 				var linkText = {
 					text: $(this).closest(".search-box")[0].childNodes[3].children[0].innerText,
 					link: linkValue()
