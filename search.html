@@ -803,10 +803,13 @@
 								$("#compare-row .pull-right .btn").removeClass("disabled");
 							}
 							if (!boxAlreadyExist) {
+								if(numberOfFieldsSelected <= 1) {
+									$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compared-subjects-title">Olet valinnut vertailuun:</div>');
+								}
 								$("#compared-subjects").append('<div class="col-xs-12 col-md-3 compare-box" id="box-' + blockId +
 									'"> <button type="button" class="close" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button> <a href="' +
-									blockContent.link + '" class="title" >' +
-									blockContent.text + '</a> <a href="' + blockContent.link + '" class="button">Tutustu</a> </div>');
+									blockContent.link + '" class="title" ><strong>' +
+									blockContent.text + ':</strong> <br> Tieto- ja viestintätekniikan perustutkinto</div>');
 							} else {
 								$("#box-" + blockId + "").remove();
 							}
