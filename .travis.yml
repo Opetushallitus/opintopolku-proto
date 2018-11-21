@@ -11,7 +11,7 @@ script:
 
 deploy:
   provider: script
-  script: aws s3 sync dist s3://proto.testiopintopolku.fi/ --delete --region eu-west-1
+  script: aws s3 sync . s3://proto.testiopintopolku.fi/ --exclude ".git/*" --exclude ".travis.yml" --delete --region eu-west-1
   skip_cleanup: true
   on:
     all_branches: true
