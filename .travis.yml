@@ -1,0 +1,17 @@
+language: minimal
+env:
+  global:
+  # AWS_ACCESS_KEY_ID
+  - secure: "4UiYtn7r2o67jJMfMhh09C9hA+W6EwysSOvmmq4RlGaAsY8U1stPC7TCZOPA0LiF8Vv1rlOuOTJGbMRpSuYjtwccLSyqmAIz0bKwEH5XkTg4gqfzBpJX+eRs2xQK/aOn2YlCtm0SJHTcxo9DJWPfrYrUEY1IyIKAUYx+toWab3n4Fu8aNJ6M85jO3v7LVZC6z/b11sDFrsUTzmo8933qLvLZKjr8d87n3fJrjwwg4/y/EsIXS9vRIldr7ycnaZLEkqr8y3HplCvQeu1RFH2wcmM1j4hY3/KuwIVtI/NWpKBDKmpnqKWDlyd9wwh5MBneC9XK2H2wGkySzMubGg3hMO5fMGQK1tYtt19fG3fguTOvTVFQTWxUaLAzZrcKGnOyOL4v9LrRHBM8TZ1aFfnJhAqSWW/ihDVGbhZ0AwPmG6lNFIclW5G8Jrm/A2LLZWpT7pO2Dg1/i/jJB8WcA5NfXNWY3yRj9RRadf0NmY3QR0raGR4KwPjiBtgHZQPQaZyG2liduFDTPibH12B+8NPkQxMs4LGhwdKNm6g2C/pDghy2Q9czks1yU9BgBNqZ+NkvrldR0/dbI7LatSUo+y5+FmZplK9dXgSQ9SFzKh8f25GiHnESDzR2CPRRABbd28vosD8/tW/3UiXJgLq+UCJPtzVzueE+Vq54ZJbafO5hfyc="
+  # AWS_SECRET_ACCESS_KEY
+  - secure: "pGVbpzBeU0SFO8hCIUJUXDkynb1EEPiv+DOuJGJkXyn81g/7czc+iAIL0VtHDIQHrNT5cGkbb5KT7WIJVPW2qqRcmpDeyrtaLC6nnzmgpWy3WihdbGizBi0QwF2pEFY7pQdoVZ3lX12dcDb2gM35p3whQjpAoc5lqpD6Qn17AP6+60b1Oqvka10ULekieH7pAqINcXAYYu2rSx+bKycMA6O5n3sgt+/ytK3dj1PUNVe6GqyY6xgb3Hx5yGDeSMO52EofKaNz2DsRiKpU5hvvLCTbIcUwOx/W0W+RY+e/4B1bs+w9p8FHafF51lJmxmCDKke/kIMO+9w5z1j08rrTmfeioKiTn9CD+Lbk/3EdQvGRxqFEySGPA93M1iC2MVbX9h7TEAZ7GP4YWZb1LLVA9GrkKWq+x6bmMMdHjgbEXjTYqNGocDNmmz0qYtE3zHaGTrb8Fp4YBZO1n13bG5ftzcsjpQbl/9S0zr/6tLxHGexOQ5Xviizzzs227xWTldJeT0NgkjIwbg4UVv+gs/K2Hgkk4Di2eNqcV3XOhCeJRrNEhAWtRZ6v9yJK4d5YvJpEfm3u51OBXTOHUVfvoNUEJUAQMfR5oYQ2ECLhodalfNnbu8jsgryGMU3yREdLhjnJS33M3vg+9U0nCt9IhM483McTCQnUQKsRq9uusfATeME="
+
+script:
+  - pip install --user awscli
+
+deploy:
+  provider: script
+  script: aws s3 sync dist s3://proto.testiopintopolku.fi/ --delete --region eu-west-1
+  skip_cleanup: true
+  on:
+    all_branches: true
